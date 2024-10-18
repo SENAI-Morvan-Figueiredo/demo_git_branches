@@ -10,13 +10,59 @@
             background: linear-gradient(to top, rgb(111, 111, 204), white);
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            height: 100%;
         }
+
         .video{
             margin: auto;
             width: fit-content;
         }
+        main{
+            width: 80%;
+            margin: auto;
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 10px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+        .list .item{
+            transition: .5s;
+            filter: brightness(0.4);
+        }
 
+        .list .item:hover{
+            filter: brightness(1);
+            transform: translateZ(100px);
+        }
+
+        .list .item:hover + *{
+            filter: brightness(0.8);
+            transform: translateZ(70px) rotateY(15deg);
+        }
+
+        .list .item:hover + * + *{
+            filter: brightness(0.6);
+            transform: translateZ(40px) rotateY(20deg);
+        }
+
+        .list .item:has(+ *:hover){
+            filter: brightness(0.8);
+            transform: translateZ(70px) rotateY(-15deg);
+        }
+
+        .list .item:has(+ * + *:hover){
+            filter: brightness(0.6);
+            transform: translateZ(40px) rotateY(-20deg);
+        }
+
+        .list .item img{
+            width: 100px;
+            height: 220px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +70,19 @@
     <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6aaKibLFF-I?si=dYYmnfMHseOtOz-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-
+    <main>
+        <div class="list">
+            <div class="item"><img src="imagens/alpine.webp" alt=""></div>
+            <div class="item"><img src="imagens/sauber.avif" alt=""></div>
+            <div class="item"><img src="imagens/astonmartin.avif" alt=""></div>
+            <div class="item"><img src="imagens/McLaren.jpg" alt=""></div>
+            <div class="item"><img src="imagens/redbull.webp" alt=""></div>
+            <div class="item"><img src="imagens/mercedes.avif" alt=""></div>
+            <div class="item"><img src="imagens/ferrari.avif" alt=""></div>
+            <div class="item"><img src="imagens/vcarb.jpg" alt=""></div>
+            <div class="item"><img src="imagens/williams.webp" alt=""></div>
+        </div>
+    </main>
     
 </body>
 </html>
