@@ -14,8 +14,12 @@ header img{
     height: 100%;
 }
 
-a{
+<<<<<<< HEAD
     font-size: 25px;
+=======
+button{
+    font-size: 30px;
+>>>>>>> 4437c942a3b6d3813e73a31005a981a5be140750
     color: rgb(43, 226, 67);
     display: flex;
     flex-direction: column;
