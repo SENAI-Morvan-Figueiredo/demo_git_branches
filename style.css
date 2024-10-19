@@ -14,6 +14,12 @@ header img{
     height: 100%;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 button{
     font-size: 30px;
     color: rgb(43, 226, 67);
@@ -22,6 +28,7 @@ button{
     flex-wrap: nowrap;
     padding: 10px;
     font-family: monospace;
+    cursor: pointer;
 }
 
 .maculados{
