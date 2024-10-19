@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel</title>
     <style>
+        html, body{
+            min-height:100%;
+        }
+
         body{
-            height: 100%;
-            background: linear-gradient(to top, rgb(111, 111, 204), white);
-            background-repeat: no-repeat;
-            text-align: center;
             margin: 0;
-            padding: 0;
+            background-image: url('imagens/background.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+           
         }
         header{
             width: 100%;
-            background: rgb(7, 1, 32);
+            background: rgba(7, 1, 32, 0.726);
             height: 60px;
             display: flex;
             justify-content: center;
@@ -27,7 +31,7 @@
             width: fit-content;
             display: flex;
             justify-content: center;
-            gap: 100px;
+            gap: 70px;
             margin: 0;
             position: relative;
         }
@@ -59,9 +63,21 @@
             width: fit-content;
         }
         main{
-            width: fit-content;
-            margin: auto;
+            width: 100%;
+            position: absolute;
+            top: 70%;
         }
+
+        main .list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .item, .item img{
+            width: fit-content;
+        }
+
         .list{
             display: flex;
             flex-direction: row;
