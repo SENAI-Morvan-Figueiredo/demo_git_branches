@@ -13,3 +13,56 @@ header img{
     width: 900px;
     height: 100%;
 }
+
+a{
+    font-size: 30px;
+    color: rgb(43, 226, 67);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.maculados{
+    background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13% , black 23%, rgb(0, 117, 128) 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline ;
+}
+
+.cranios{
+    background: linear-gradient(to right, #0dcb29 1%, rgb(231, 9, 219) 13%, blue 23%, yellow 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.financeiramente{
+    background: linear-gradient(to right, #cb1d0d 1%, rgb(9, 94, 231) 13%, rgb(86, 54, 6) 23%, rgb(220, 13, 220) 33%, yellow 43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mavericks{
+    background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gabiru{
+    background: linear-gradient(to right, #9400d9 1%, rgb(9, 76, 231) 13%, rgb(249, 18, 18) 23%, rgb(0, 0, 0) 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.livingtech{
+    background: linear-gradient(to right, #3a7dba 1%, rgb(67, 107, 200) 13%, rgb(37, 18, 249) 23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infinity{
+    background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
