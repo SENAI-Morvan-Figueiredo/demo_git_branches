@@ -81,5 +81,48 @@ button{
     background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+<<<<<<< HEAD
     transition: 1s;
+=======
+}
+
+.card{
+    width: 200px;
+    height: 400px;
+    display: block;
+    text-align: center;
+}
+
+
+#Maculados{
+    background: green;
+}
+
+#Infinity{
+    background: red;
+
+}
+
+#Financeiramente{
+    background: bisque;
+
+}
+
+#Crânios{
+    background: antiquewhite;
+
+}
+
+#Mavericks{
+    background: aqua;
+}
+
+#Gabiru{
+    background: darkblue;
+
+}
+
+#Livingtech{
+    background: blueviolet;
+>>>>>>> 4437c942a3b6d3813e73a31005a981a5be140750
 }
