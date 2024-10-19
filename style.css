@@ -14,12 +14,8 @@ header img{
     height: 100%;
 }
 
-<<<<<<< HEAD
-    font-size: 25px;
-=======
 button{
-    font-size: 30px;
->>>>>>> 4437c942a3b6d3813e73a31005a981a5be140750
+    font-size: 25px;
     color: rgb(43, 226, 67);
     display: flex;
     flex-direction: column;
@@ -32,7 +28,7 @@ button{
     background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13% , black 23%, rgb(0, 117, 128) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: underline;
+    text-decoration: underline ;
     transition: 1s;
 }
 
@@ -48,6 +44,11 @@ button{
     transition: 1s;
 }
 
+.cranios:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+
 .financeiramente{
     background: linear-gradient(to right, #cb1d0d 1%, rgb(9, 94, 231) 13%, rgb(86, 54, 6) 23%, rgb(220, 13, 220) 33%, yellow 43%);
     -webkit-background-clip: text;
@@ -55,11 +56,20 @@ button{
     transition: 1s;
 }
 
+.financeiramente:hover{
+    font-size: 30px;
+    transition: 1s;
+}
 
 .mavericks{
     background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.mavericks:hover{
+    font-size: 30px;
     transition: 1s;
 }
 
@@ -70,6 +80,11 @@ button{
     transition: 1s;
 }
 
+.gabiru:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+
 .livingtech{
     background: linear-gradient(to right, #3a7dba 1%, rgb(67, 107, 200) 13%, rgb(37, 18, 249) 23%);
     -webkit-background-clip: text;
@@ -77,52 +92,19 @@ button{
     transition: 1s;
 }
 
+.livingtech:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+
 .infinity{
     background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-<<<<<<< HEAD
     transition: 1s;
-=======
 }
 
-.card{
-    width: 200px;
-    height: 400px;
-    display: block;
-    text-align: center;
-}
-
-
-#Maculados{
-    background: green;
-}
-
-#Infinity{
-    background: red;
-
-}
-
-#Financeiramente{
-    background: bisque;
-
-}
-
-#Crânios{
-    background: antiquewhite;
-
-}
-
-#Mavericks{
-    background: aqua;
-}
-
-#Gabiru{
-    background: darkblue;
-
-}
-
-#Livingtech{
-    background: blueviolet;
->>>>>>> 4437c942a3b6d3813e73a31005a981a5be140750
+.infinity:hover{
+    font-size: 30px;
+    transition: 1s;
 }
