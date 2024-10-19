@@ -9,8 +9,9 @@
 
 body {
   text-align: center;
-  background-image:url('imagens/🔥\ One\ Piece\ Straw\ Hat\ Wallpapers\ on\ WallpaperSafari.jfif');
+  background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07') ;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
 }
@@ -23,7 +24,7 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:#2C4845;
   }
   
   li {
@@ -41,7 +42,7 @@ nav {
   }
   
   li a:hover {
-    background-color:orange;
+    background-color:#daa520 ;
   }
 
 main {
@@ -51,31 +52,37 @@ main {
     position: relative;
   }
 
-  .container{
+.container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.conteudo{
-    color: azure;
-    margin-top: px;
-    width: 500px;
-  }
 
 .card{
-    width: 700px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     border-radius: 20px;
     margin-top: 350px;
-    background-color: #494949;
+    background-color: #2C4845;
 }
 
-
-.one{
-    color: aliceblue;
-    margin-top:  10px;
-    margin-bottom: 20px;
+:hover.card{
+  background-color:#daa520 ;
 }
-.text{
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.personagem{ 
+    width: 120px;
+    height: 180px;
+    border-radius: 20%;
+    margin-top: 10px;
+
+
+}
+
+.texto{
     color: azure;
 }
