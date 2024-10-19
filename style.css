@@ -43,6 +43,7 @@ a{
     -webkit-text-fill-color: transparent;
 }
 
+
 .mavericks{
     background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
     -webkit-background-clip: text;
