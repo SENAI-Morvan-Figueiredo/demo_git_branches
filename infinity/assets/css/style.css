@@ -45,6 +45,63 @@ a{
 
 
 /* João */
+.ori {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+.point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point p {
+    margin-top: 10px;
+    width: 300px;
+    text-align:justify;
+    text-indent: 1.3em;
+}
+
+.hab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hab h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desenvolvimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desenvolvimento p{
+    margin-top: 10px;
+    width: 300px;
+    text-align:justify;
+    text-indent: 1.3em;
+}
+
+
+.fotuenha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .fotuenha img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+ }
 
 
 
