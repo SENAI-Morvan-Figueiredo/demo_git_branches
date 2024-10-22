@@ -298,11 +298,21 @@ button.btn-links:hover {
 }
 
 .card{
-    width: 200px;
-    height: 400px;
-    display: block;
-    text-align: center;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.card a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
 
 
 #Maculados{
