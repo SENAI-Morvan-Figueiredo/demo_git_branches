@@ -89,7 +89,8 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    border-radius: 20px;
+    position: relative;
 }
 
 .card a{
@@ -99,11 +100,27 @@ header img{
     font-size: 22px;
 }
 
-
-
 #Maculados{
-    background: green;
+  background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+#Maculados a::after, #Maculados a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    background: conic-gradient(from var(--angle), black, red, gold, rgb(7, 101, 56), black);
+    padding: 3px;
+    animation: spin 5s linear infinite;
+}
+
 
 #Infinity{
     background: red;
@@ -131,4 +148,19 @@ header img{
 
 #Livingtech{
     background: blueviolet;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+   from{
+    --angle: 0deg;
+   }
+   to{
+    --angle: 360deg;
+   }
 }
