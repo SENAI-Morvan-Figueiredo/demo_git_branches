@@ -89,7 +89,16 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
 }
+
+.card a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
 
 
 #Maculados{
