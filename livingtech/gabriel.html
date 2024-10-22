@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel</title>
+    <title>Página Engraçada</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .funny-image {
+            width: 150px; /* Reduzido o tamanho da imagem para garantir que não haja rolagem */
+            margin-top: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+        .butt-button {
+            padding: 8px 16px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        .butt-button:hover {
+            background-color: #ff9900;
+        }
+    </style>
 </head>
 <body>
-    <h1>teste push</h1>
+    <h1>Ops! O Bart foi pego em flagrante!</h1>
+    <p>Cuidado! Ele pode aprontar a qualquer momento... 😜</p>
+    <img src="/livingtech/imagens/bart.png" alt="Imagem engraçada" class="funny-image">
+    <p>Pressione o botão abaixo, mas não diga que eu não avisei!</p>
+    <button class="butt-button" onclick="alert('Bart mandou um recado: Beijinho no ombro! 😆')">Mostrar a Travessura</button>
 </body>
 </html>
