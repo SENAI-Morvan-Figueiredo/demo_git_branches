@@ -182,7 +182,7 @@ font-weight: 800;
 .sobre-info div a i:hover{
     border-radius: 50%;
     background-color:#2C4845 ;
-    box-shadow: 0px 0px 20px #daa520;
+    box-shadow: 0px 0px 20px ;
 }
 
 .sobre-info p{
@@ -392,10 +392,4 @@ font-weight: 800;
         -webkit-transform: translateX(calc(-650px * 4));
         transform: translateX(calc(-650px * 4));
     }
-}
-
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
 }
