@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ronny's Page</title>
+</head>
+<style>
+      * {
+            padding: 0;
+            margin: 0;
+      }
+
+      body {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100vh;
+      }
+
+      .linha {
+            display: flex;
+            height: 100%;
+      }
+
+      .celula {
+            border: solid 1px rgb(251, 51, 161);
+            width: 100%;
+            cursor: pointer;
+      }
+
+      .correct {
+            background-color: lightgreen;
+            /* Cor para a célula correta */
+      }
+
+      .incorrect {
+            background-color: lightcoral;
+            /* Cor para a célula incorreta */
+      }
+</style>
+
+<body>
+      <div
+            style="display: flex; flex-direction: column;align-items: center;background-color: rgb(251, 51, 161);color: white;gap:1rem;padding: 1rem;">
+            <h1>Olá, bem vindo ao meu jogo da memória!</h1>
+            <h4>Seu objetivo é fazer o caminho de CIMA para BAIXO, apenas uma celula por linha está CORRETA, boa sorte!
+            </h4>
+            <h4>Eu sei...poderia ser numerado pra ficar mais fácil, aqui não tem moleza!</h4>
+      </div>
+      <div class="linha linha-1">
+            <div data-cel="1" class="celula celula-1"></div>
+            <div data-cel="2" class="celula celula-2"></div>
+            <div data-cel="3" class="celula celula-3"></div>
+            <div data-cel="4" class="celula celula-4"></div>
+            <div data-cel="5" class="celula celula-5"></div>
+            <div data-cel="6" class="celula celula-6"></div>
+            <div data-cel="7" class="celula celula-7"></div>
+            <div data-cel="8" class="celula celula-8"></div>
+            <div data-cel="9" class="celula celula-9"></div>
+            <div data-cel="10" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-2">
+            <div data-cel="11" class="celula celula-1"></div>
+            <div data-cel="12" class="celula celula-2"></div>
+            <div data-cel="13" class="celula celula-3"></div>
+            <div data-cel="14" class="celula celula-4"></div>
+            <div data-cel="15" class="celula celula-5"></div>
+            <div data-cel="16" class="celula celula-6"></div>
+            <div data-cel="17" class="celula celula-7"></div>
+            <div data-cel="18" class="celula celula-8"></div>
+            <div data-cel="19" class="celula celula-9"></div>
+            <div data-cel="20" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-3">
+            <div data-cel="21" class="celula celula-1"></div>
+            <div data-cel="22" class="celula celula-2"></div>
+            <div data-cel="23" class="celula celula-3"></div>
+            <div data-cel="24" class="celula celula-4"></div>
+            <div data-cel="25" class="celula celula-5"></div>
+            <div data-cel="26" class="celula celula-6"></div>
+            <div data-cel="27" class="celula celula-7"></div>
+            <div data-cel="28" class="celula celula-8"></div>
+            <div data-cel="29" class="celula celula-9"></div>
+            <div data-cel="30" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-4">
+            <div data-cel="31" class="celula celula-1"></div>
+            <div data-cel="32" class="celula celula-2"></div>
+            <div data-cel="33" class="celula celula-3"></div>
+            <div data-cel="34" class="celula celula-4"></div>
+            <div data-cel="35" class="celula celula-5"></div>
+            <div data-cel="36" class="celula celula-6"></div>
+            <div data-cel="37" class="celula celula-7"></div>
+            <div data-cel="38" class="celula celula-8"></div>
+            <div data-cel="39" class="celula celula-9"></div>
+            <div data-cel="40" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-5">
+            <div data-cel="41" class="celula celula-1"></div>
+            <div data-cel="42" class="celula celula-2"></div>
+            <div data-cel="43" class="celula celula-3"></div>
+            <div data-cel="44" class="celula celula-4"></div>
+            <div data-cel="45" class="celula celula-5"></div>
+            <div data-cel="46" class="celula celula-6"></div>
+            <div data-cel="47" class="celula celula-7"></div>
+            <div data-cel="48" class="celula celula-8"></div>
+            <div data-cel="49" class="celula celula-9"></div>
+            <div data-cel="50" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-6">
+            <div data-cel="51" class="celula celula-1"></div>
+            <div data-cel="52" class="celula celula-2"></div>
+            <div data-cel="53" class="celula celula-3"></div>
+            <div data-cel="54" class="celula celula-4"></div>
+            <div data-cel="55" class="celula celula-5"></div>
+            <div data-cel="56" class="celula celula-6"></div>
+            <div data-cel="57" class="celula celula-7"></div>
+            <div data-cel="58" class="celula celula-8"></div>
+            <div data-cel="59" class="celula celula-9"></div>
+            <div data-cel="60" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-7">
+            <div data-cel="61" class="celula celula-1"></div>
+            <div data-cel="62" class="celula celula-2"></div>
+            <div data-cel="63" class="celula celula-3"></div>
+            <div data-cel="64" class="celula celula-4"></div>
+            <div data-cel="65" class="celula celula-5"></div>
+            <div data-cel="66" class="celula celula-6"></div>
+            <div data-cel="67" class="celula celula-7"></div>
+            <div data-cel="68" class="celula celula-8"></div>
+            <div data-cel="69" class="celula celula-9"></div>
+            <div data-cel="70" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-8">
+            <div data-cel="71" class="celula celula-1"></div>
+            <div data-cel="72" class="celula celula-2"></div>
+            <div data-cel="73" class="celula celula-3"></div>
+            <div data-cel="74" class="celula celula-4"></div>
+            <div data-cel="75" class="celula celula-5"></div>
+            <div data-cel="76" class="celula celula-6"></div>
+            <div data-cel="77" class="celula celula-7"></div>
+            <div data-cel="78" class="celula celula-8"></div>
+            <div data-cel="79" class="celula celula-9"></div>
+            <div data-cel="80" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-9">
+            <div data-cel="81" class="celula celula-1"></div>
+            <div data-cel="82" class="celula celula-2"></div>
+            <div data-cel="83" class="celula celula-3"></div>
+            <div data-cel="84" class="celula celula-4"></div>
+            <div data-cel="85" class="celula celula-5"></div>
+            <div data-cel="86" class="celula celula-6"></div>
+            <div data-cel="87" class="celula celula-7"></div>
+            <div data-cel="88" class="celula celula-8"></div>
+            <div data-cel="89" class="celula celula-9"></div>
+            <div data-cel="90" class="celula celula-10"></div>
+      </div>
+
+      <div class="linha linha-10">
+            <div data-cel="91" class="celula celula-1"></div>
+            <div data-cel="92" class="celula celula-2"></div>
+            <div data-cel="93" class="celula celula-3"></div>
+            <div data-cel="94" class="celula celula-4"></div>
+            <div data-cel="95" class="celula celula-5"></div>
+            <div data-cel="96" class="celula celula-6"></div>
+            <div data-cel="97" class="celula celula-7"></div>
+            <div data-cel="98" class="celula celula-8"></div>
+            <div data-cel="99" class="celula celula-9"></div>
+            <div data-cel="100" class="celula celula-10"></div>
+      </div>
+      <script>
+            const rows = 10;
+            const cols = 10;
+            let correctPath = [];
+            let currentColumn = 0;
+            console.log(correctPath);
+            console.log(currentColumn);
+            // Função para gerar um caminho secreto aleatório
+            function generatePath() {
+                  for (let col = 0; col < cols; col++) {
+                        // Gera uma linha aleatória para cada coluna
+                        correctPath[col] = Math.floor(Math.random() * rows) + col * cols;
+                  }
+            }
+
+            // Função para lidar com o clique na célula
+            function handleCellClick(event) {
+                  const cell = event.target;
+                  const cellIndex = parseInt(cell.getAttribute('data-cel'), 10) - 1;
+
+                  if (currentColumn < cols) {
+                        if (currentColumn === 0) {
+
+                        }
+                        if (cellIndex === correctPath[currentColumn]) {
+                              cell.classList.add('correct');  // Adiciona classe de sucesso
+                              currentColumn++;
+                              // Verifica se o caminho foi completado
+                              if (currentColumn === cols) {
+                                    alert('Você completou o caminho secreto!'); // Pode ser removido se preferir
+                              }
+                        } else {
+                              cell.classList.add('incorrect'); // Adiciona classe de erro
+                              setTimeout(resetPath, 200);                                // Redefine o caminho
+                        }
+                  }
+            }
+
+            // Função para redefinir o caminho
+            function resetPath() {
+                  const cells = document.querySelectorAll('div[data-cel]');
+                  cells.forEach(cell => {
+                        cell.classList.remove('correct', 'incorrect');
+                  });
+                  currentColumn = 0;
+            }
+
+            // Inicializa o jogo
+            generatePath();
+
+            // Adiciona o evento de clique a cada célula
+            const cells = document.querySelectorAll('div[data-cel]');
+            cells.forEach(cell => {
+                  cell.addEventListener('click', handleCellClick);
+            });
+
+
+      </script>
+</body>
+
+</html>
