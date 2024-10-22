@@ -1,5 +1,5 @@
 const grupos = ['Maculados', 'Infinity', 'Financeiramente', 'Crânios', 'Mavericks', 'Gabiru', 'Livingtech']
-const gruposPasta = ['maculados', 'infinity', 'ClinicaDiNutri', 'cranios', 'mavericks', 'gabiru', 'livingtech']
+const gruposPasta = ['tarnished', 'infinity', 'ClinicaDiNutri', 'cranios', 'mavericks', 'gabiru', 'livingtech']
 
 
 let botoes = document.querySelectorAll(".btn-links");
