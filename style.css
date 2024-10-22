@@ -14,16 +14,31 @@ header img{
     height: 100%;
 }
 
-a{
-    font-size: 30px;
-    color: rgb(43, 226, 67);
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.botoes{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 10px;
     font-family: monospace;
+    gap: 10px;
+    cursor: pointer;
+    width: 800px;
 }
-
+.botoes button{
+    font-size: 30px;
+    color: rgb(43, 226, 67);
+    font-family: monospace;
+    height: 40px;
+}
 .maculados{
     background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13% , black 23%, rgb(0, 117, 128) 33%);
     -webkit-background-clip: text;
@@ -65,4 +80,46 @@ a{
     background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#Maculados{
+    background: green;
+}
+
+#Infinity{
+    background: red;
+
+}
+
+#Financeiramente{
+    background: bisque;
+
+}
+
+#Crânios{
+    background: antiquewhite;
+
+}
+
+#Mavericks{
+    background: aqua;
+}
+
+#Gabiru{
+    background: darkblue;
+
+}
+
+#Livingtech{
+    background: blueviolet;
 }
