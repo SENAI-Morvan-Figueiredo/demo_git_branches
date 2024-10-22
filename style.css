@@ -299,6 +299,9 @@ button.btn-links:hover {
 .container-card{
     width: 300px;
     height: 300px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
 }
 .card{
     width: 300px;
