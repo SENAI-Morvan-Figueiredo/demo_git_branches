@@ -41,9 +41,33 @@ a{
 }
 
 /* Bruno */
+.toy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    color: black;
+    padding: 100 px;
 
 
+}
+.bus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 
+}
+
+.mario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    
+}
 /* João */
 .ori {
     font-size: 1.5em;
