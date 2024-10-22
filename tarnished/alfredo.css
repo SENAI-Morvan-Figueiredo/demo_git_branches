@@ -24,9 +24,13 @@ nav {
     border-color: rgba(0, 0, 0, 0.4);
 }
 
+h1{
+    padding: 2%;
+    text-align: center;
+}
+
 li {
     float: left
-    
 }
   
 li a {
@@ -35,7 +39,6 @@ li a {
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;
-    
 }
   
 li a:hover {
