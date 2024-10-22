@@ -1,3 +1,18 @@
+:root {
+    --bg: #F6F8FC;
+    --primary: #8f3cca;
+    --secondary: #e36f58;
+    --h2-color: #5B5D72;
+    --text: white;
+    --cube-side: 2.75rem;
+    --cube-side-half: calc(var(--cube-side) / 2);
+    --border-radius: 2rem;
+    --bg: #060D23;
+    --btn-bg: #e36f58;
+    --glow-size: 0.5rem;
+  }
+  
+
 *{
     width: 100%;
     margin: 0;
@@ -14,17 +29,9 @@ header img{
     height: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    height: fit-content;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.botoes{
+button{
+    font-size: 30px;
+    color: rgb(43, 226, 67);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -39,41 +46,249 @@ header img{
     font-family: monospace;
     height: 40px;
 }
+
+/* burgers */
+.burgers {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 6.5rem 6.5rem 6.5rem;
+    grid-template-rows: 8rem 8rem;
+    gap: 2rem;
+    align-items: center;
+    margin-top: -190px;
+    margin-left: 20px;
+    
+  }
+  
+  .burger-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4.5rem;
+   
+  }
+  
+  /* burger 06 */
+  .burger-6 #ck-6 {
+    display: none;
+    background-color: #3a7dba;
+  }
+  
+  .burger-6 .toggle {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition-duration: .5s;
+    
+  }
+  
+  .burger-6 .bars {
+    width: 100%;
+    height: 5px;
+    background: var(--primary);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px black;
+  }
+  
+  .burger-6 #bar2 {
+    transition-duration: .8s;
+  }
+  
+  .burger-6 #bar1, #bar3 {
+    width: 70%;
+  }
+  
+  .burger-6 input[type='checkbox']:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  .burger-6 input[type='checkbox']:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  .burger-6 input[type='checkbox']:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  .burger-6 input[type='checkbox']:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  .burger-6 input[type='checkbox']:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  
+  /* burger dropdown */
+  .burger-6 .dropdown-menu {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: 4.5rem; /* Ajuste a posição conforme necessário */
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    box-shadow: 0 2px 8px #ca633c;
+    border-radius: 8px;
+    width: auto;
+  }
+  
+  .burger-6 .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .burger-6 .dropdown-menu ul li {
+    margin: 8px 0;
+  }
+  
+  .burger-6 .dropdown-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    font-family: monospace;
+    font-size: 18px;
+    transition: 1s;
+   
+  }
+  
+  .burger-6 .dropdown-menu ul li a:hover {
+    background-color: #f3bc7880; 
+    transition: 1s;
+    border-radius: 10px;
+  }
+  
+  /* Mostrar o menu dropdown quando o checkbox estiver marcado */
+  .burger-6 #ck-6:checked ~ .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: 4.5rem; /* Ajuste conforme necessário */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparência leve */
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: auto;
+    
+}
+
+.dropdown-menu ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+}
+
+button.btn-links {
+    background-color: transparent; /* Remove fundo dos botões */
+    border: none; /* Remove borda */
+    font-size: 20px; /* Tamanho do texto ajustado */
+    color: rgb(43, 226, 67); /* Cor verde neon */
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn-links:hover {
+    color: #32cd32; /* Cor levemente diferente no hover */
+}
+
+.container{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 .maculados{
     background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13% , black 23%, rgb(0, 117, 128) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline ;
+    transition: 1s;
+}
+
+.maculados:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .cranios{
     background: linear-gradient(to right, #0dcb29 1%, rgb(231, 9, 219) 13%, blue 23%, yellow 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.cranios:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .financeiramente{
     background: linear-gradient(to right, #cb1d0d 1%, rgb(9, 94, 231) 13%, rgb(86, 54, 6) 23%, rgb(220, 13, 220) 33%, yellow 43%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.financeiramente:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .mavericks{
     background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.mavericks:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .gabiru{
     background: linear-gradient(to right, #9400d9 1%, rgb(9, 76, 231) 13%, rgb(249, 18, 18) 23%, rgb(0, 0, 0) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.gabiru:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .livingtech{
     background: linear-gradient(to right, #3a7dba 1%, rgb(67, 107, 200) 13%, rgb(37, 18, 249) 23%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.livingtech:hover{
+    font-size: 30px;
+    transition: 1s;
 }
 
 .infinity{
@@ -81,7 +296,10 @@ header img{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.container-card{
+    width: 300px;
+    height: 300px;
+}
 .card{
     width: 300px;
     height: 100%;
@@ -105,6 +323,7 @@ header img{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 #Maculados a::after, #Maculados a::before{
     content: '';
@@ -163,4 +382,9 @@ header img{
    to{
     --angle: 360deg;
    }
+}
+.infinity:hover{
+    font-size: 30px;
+    transition: 1s;
+
 }
