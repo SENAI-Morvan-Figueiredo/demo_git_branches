@@ -1,0 +1,107 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffd900; /* Azul claro do céu */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b0bec5; /* Cinza metálico */
+}
+
+header {
+    text-align: center;
+    margin-top: 50PX;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #000000; /* Azul aeronáutico */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ffd900; /* Borda azul aeronáutica */
+}
+
+.info {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.info h2 {
+    font-size: 2em;
+    color: #ffd900; /* Azul mais escuro */
+}
+
+.info p {
+    font-size: 1.1em;
+    color: #455a64;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    color: #ffd900;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* Fundo leve para destaque */
+    padding: 15px;
+    border-left: 5px solid #ffd900;
+    border-radius: 5px;
+}
+
+.aviation-info {
+    margin-bottom: 30px;
+}
+
+.aviation-info h2 {
+    font-size: 1.8em;
+    color: #ffd900;
+    margin-bottom: 10px;
+}
+
+.aviation-info ul {
+    list-style-type: none;
+    padding: 0;
+}
