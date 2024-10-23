@@ -24,6 +24,23 @@ header {
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FotoDePerfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
