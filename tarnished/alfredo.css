@@ -1,8 +1,15 @@
-*
-{
+/* Configuração Inicial */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Configurações da página */
+body {
+    background-image: linear-gradient(to bottom, #6523B6, #EE7221);
+    min-height: 300vh;
 }
 
 nav {
@@ -13,23 +20,67 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #6523B6;
+    background-color: #6523b6;
+    border-bottom-style: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.card {
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Controle de textos */
+h1 {
+    padding: 2%;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    padding: 2%;
+    margin-top: auto;
+    text-align: center;
+    color: #EE7221;
 }
 
 li {
     float: left
-    
 }
-  
+
 li a {
     display: block;
     color: white;
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;
-  
 }
-  
+
 li a:hover {
-    background-color: #EE7221 ;
+    background-color: #EE7221;
+}
+
+.texto {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+/* Controle de Imagens */
+.perfil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
