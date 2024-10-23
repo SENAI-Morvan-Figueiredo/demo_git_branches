@@ -1,6 +1,6 @@
 :root {
     --bg: #F6F8FC;
-    --primary: #8f3cca;
+    --primary: #d9d20f;
     --secondary: #e36f58;
     --h2-color: #5B5D72;
     --text: white;
@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    background-image: url('background-index.jpg');
+    background-image: url('https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -35,18 +35,25 @@ header {
     justify-content: center;
     align-items: center;
     margin-left: 450px;
+    backdrop-filter: blur(4px);
+    border: 1px solid white;
+    width: 440px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-top: 10px;
 }
 
 h1{
   font-family: monospace;
   font-size: 40px;
-  color: #8f0dcb;
+  color: #d99c0f;
 }
 
 h3{
   font-family: monospace;
   font-size: 30px;
-  color: blueviolet;
+  color: #c6931d;
+  margin-left: 300px;
+  
 }
 
 
@@ -77,7 +84,7 @@ button{
     grid-template-rows: 8rem 8rem;
     gap: 2rem;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -150px;
     margin-left: 20px;
 
 }
