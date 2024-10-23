@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07') ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#2C4845;
+  }
+  
+  li {
+    float: left
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  
+  }
+  
+  li a:hover {
+    background-color:#daa520 ;
+  }
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+  }
+
+
+.intro{
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  height: 420px;
+  border-radius: 20px;
+  padding: 2%;
+
+  margin-left: 5%;
+  color: azure;
+  margin-top: 120px;
+  margin-bottom: 40px;
+
+  }
+.titulo{
+  align-content: center;
+}
+.introt{
+  text-align: left;
+}
+
+.sobre{
+  display: flex;
+  justify-content: left;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #2C4845;
+}
+
+.card:hover{
+  background-color:#daa520 ;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.personagem{ 
+    width: 120px;
+    height: 180px;
+    border-radius: 20%;
+    margin-top: 10px;
+
+
+}
+
+.texto{
+  padding: 5%;
+    color: azure;
+}
