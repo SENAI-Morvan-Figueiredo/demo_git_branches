@@ -70,7 +70,6 @@ body {
     background: #2C4845;
     border-top-left-radius: 60px 80px;
     border-top-right-radius: 60px 80px;
-
 }
 
 .menu-lateral {
@@ -88,28 +87,28 @@ body {
 
 .menu-lateral a {
     text-decoration: none;
-    font-size: 22px;
-    color: #2C4845;
+    font-size: 30px;
+    color: #daa520;
 
 }
 
 .menu-lateral div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     width: 100%;
 }
 
 .menu-lateral div p {
     display: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
 }
 
 .icones {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -127,12 +126,12 @@ body {
     background: #2C4845;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 20px white;
+    text-shadow: 5px 5px 20px #daa520;
 }
 
 .icones img {
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 70px;
 }
 
 .sobre {
