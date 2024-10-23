@@ -43,13 +43,20 @@
 </style>
 
 <body>
-      <div
-            style="display: flex; flex-direction: column;align-items: center;background-color: rgb(251, 51, 161);color: white;gap:1rem;padding: 1rem;">
-            <h1>Olá, bem vindo ao meu jogo da memória!</h1>
-            <h4>Seu objetivo é fazer o caminho de CIMA para BAIXO, apenas uma celula por linha está CORRETA, boa sorte!
-            </h4>
-            <h4>Eu sei...poderia ser numerado pra ficar mais fácil, aqui não tem moleza!</h4>
+      <div style="display: flex;background-color: rgb(251, 51, 161);">
+            <div style="flex-grow: 1;display: flex;padding: 2rem;justify-self: center;">
+                  <span id="timer">0:00</span>
+            </div>
+            <div
+                  style="flex-grow: 2;display: flex; flex-direction: column;align-items: center;color: white;gap:1rem;padding: 1rem;">
+                  <h1>Olá, bem vindo ao meu jogo da memória!</h1>
+                  <h4>Seu objetivo é fazer o caminho de CIMA para BAIXO, apenas uma celula por linha está CORRETA, boa
+                        sorte!
+                  </h4>
+                  <h4>Eu sei...poderia ser numerado pra ficar mais fácil, aqui não tem moleza!</h4>
+            </div>
       </div>
+
       <div class="linha linha-1">
             <div data-cel="1" class="celula celula-1"></div>
             <div data-cel="2" class="celula celula-2"></div>
@@ -184,8 +191,10 @@
             const cols = 10;
             let correctPath = [];
             let currentColumn = 0;
-            console.log(correctPath);
-            console.log(currentColumn);
+            let timerInterval;
+            let seconds = 0;
+            let tempoValendo = false;
+
             // Função para gerar um caminho secreto aleatório
             function generatePath() {
                   for (let col = 0; col < cols; col++) {
@@ -198,10 +207,20 @@
             function handleCellClick(event) {
                   const cell = event.target;
                   const cellIndex = parseInt(cell.getAttribute('data-cel'), 10) - 1;
-
+                  
                   if (currentColumn < cols) {
-                        if (currentColumn === 0) {
+                        if (currentColumn === 0 && !tempoValendo) {
+                              clearInterval(timerInterval);
 
+                              tempoValendo = true;
+                              // Reseta os segundos
+                              seconds = 0;
+
+                              // Inicia o cronômetro
+                              timerInterval = setInterval(() => {
+                                    seconds++;
+                                    updateTimerDisplay();
+                              }, 1000);
                         }
                         if (cellIndex === correctPath[currentColumn]) {
                               cell.classList.add('correct');  // Adiciona classe de sucesso
@@ -235,6 +254,25 @@
                   cell.addEventListener('click', handleCellClick);
             });
 
+
+
+
+
+
+
+
+
+
+
+            // Função para atualizar o display do cronômetro
+            function updateTimerDisplay() {
+                  const minutes = Math.floor(seconds / 60);
+                  const secs = seconds % 60;
+
+                  // Formata o tempo com dois dígitos
+                  const formattedTime = `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                  document.getElementById('timer').innerText = formattedTime;
+            }
 
       </script>
 </body>
