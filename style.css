@@ -10,26 +10,36 @@
     --bg: #060D23;
     --btn-bg: #e36f58;
     --glow-size: 0.5rem;
-  }
-  
+}
 
-*{
+body {
+    margin: 0;
+    background-image: url('background-index.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+* {
     width: 100%;
     margin: 0;
 }
-header{
+
+header {
     width: 100%;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header img{
+
+header img {
     width: 900px;
     height: 100%;
 }
 
-button{
+button {
     font-size: 30px;
     color: rgb(43, 226, 67);
     display: flex;
@@ -40,7 +50,8 @@ button{
     cursor: pointer;
     width: 800px;
 }
-.botoes button{
+
+.botoes button {
     font-size: 30px;
     color: rgb(43, 226, 67);
     font-family: monospace;
@@ -57,25 +68,25 @@ button{
     align-items: center;
     margin-top: -190px;
     margin-left: 20px;
-    
-  }
-  
-  .burger-wrapper {
+
+}
+
+.burger-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     height: 4.5rem;
-   
-  }
-  
-  /* burger 06 */
-  .burger-6 #ck-6 {
+
+}
+
+/* burger 06 */
+.burger-6 #ck-6 {
     display: none;
     background-color: #3a7dba;
-  }
-  
-  .burger-6 .toggle {
+}
+
+.burger-6 .toggle {
     position: relative;
     width: 35px;
     height: 35px;
@@ -86,76 +97,79 @@ button{
     justify-content: center;
     gap: 7px;
     transition-duration: .5s;
-    
-  }
-  
-  .burger-6 .bars {
+
+}
+
+.burger-6 .bars {
     width: 100%;
     height: 5px;
     background: var(--primary);
     border-radius: 6px;
     box-shadow: 0 2px 8px black;
-  }
-  
-  .burger-6 #bar2 {
+}
+
+.burger-6 #bar2 {
     transition-duration: .8s;
-  }
-  
-  .burger-6 #bar1, #bar3 {
+}
+
+.burger-6 #bar1,
+#bar3 {
     width: 70%;
-  }
-  
-  .burger-6 input[type='checkbox']:checked + .toggle .bars {
+}
+
+.burger-6 input[type='checkbox']:checked+.toggle .bars {
     position: absolute;
     transition-duration: .5s;
-  }
-  
-  .burger-6 input[type='checkbox']:checked + .toggle #bar2 {
+}
+
+.burger-6 input[type='checkbox']:checked+.toggle #bar2 {
     transform: scaleX(0);
     transition-duration: .5s;
-  }
-  
-  .burger-6 input[type='checkbox']:checked + .toggle #bar1 {
+}
+
+.burger-6 input[type='checkbox']:checked+.toggle #bar1 {
     width: 100%;
     transform: rotate(45deg);
     transition-duration: .5s;
-  }
-  
-  .burger-6 input[type='checkbox']:checked + .toggle #bar3 {
+}
+
+.burger-6 input[type='checkbox']:checked+.toggle #bar3 {
     width: 100%;
     transform: rotate(-45deg);
     transition-duration: .5s;
-  }
-  
-  .burger-6 input[type='checkbox']:checked + .toggle {
+}
+
+.burger-6 input[type='checkbox']:checked+.toggle {
     transition-duration: .5s;
     transform: rotate(180deg);
-  }
-  
-  /* burger dropdown */
-  .burger-6 .dropdown-menu {
-    display: none; /* Oculto por padrão */
+}
+
+/* burger dropdown */
+.burger-6 .dropdown-menu {
+    display: none;
+    /* Oculto por padrão */
     position: absolute;
-    top: 4.5rem; /* Ajuste a posição conforme necessário */
+    top: 4.5rem;
+    /* Ajuste a posição conforme necessário */
     background-color: #ffffff;
     border: 1px solid #000000;
     padding: 10px;
     box-shadow: 0 2px 8px #ca633c;
     border-radius: 8px;
     width: auto;
-  }
-  
-  .burger-6 .dropdown-menu ul {
+}
+
+.burger-6 .dropdown-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .burger-6 .dropdown-menu ul li {
+}
+
+.burger-6 .dropdown-menu ul li {
     margin: 8px 0;
-  }
-  
-  .burger-6 .dropdown-menu ul li a {
+}
+
+.burger-6 .dropdown-menu ul li a {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
@@ -163,147 +177,159 @@ button{
     font-family: monospace;
     font-size: 18px;
     transition: 1s;
-   
-  }
-  
-  .burger-6 .dropdown-menu ul li a:hover {
-    background-color: #f3bc7880; 
+
+}
+
+.burger-6 .dropdown-menu ul li a:hover {
+    background-color: #f3bc7880;
     transition: 1s;
     border-radius: 10px;
-  }
-  
-  /* Mostrar o menu dropdown quando o checkbox estiver marcado */
-  .burger-6 #ck-6:checked ~ .dropdown-menu {
+}
+
+/* Mostrar o menu dropdown quando o checkbox estiver marcado */
+.burger-6 #ck-6:checked~.dropdown-menu {
     display: block;
-  }
-  
-  .dropdown-menu {
-    display: none; /* Oculto por padrão */
+}
+
+.dropdown-menu {
+    display: none;
+    /* Oculto por padrão */
     position: absolute;
-    top: 4.5rem; /* Ajuste conforme necessário */
-    background-color: rgba(255, 255, 255, 0.8); /* Transparência leve */
+    top: 4.5rem;
+    /* Ajuste conforme necessário */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparência leve */
     padding: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: auto;
-    
+
 }
 
 .dropdown-menu ul {
-    list-style: none; /* Remove marcadores de lista */
+    list-style: none;
+    /* Remove marcadores de lista */
     padding: 0;
     margin: 0;
 }
 
 .dropdown-menu ul li {
-    margin-bottom: 20px; /* Espaçamento entre os itens */
+    margin-bottom: 20px;
+    /* Espaçamento entre os itens */
 }
 
 button.btn-links {
-    background-color: transparent; /* Remove fundo dos botões */
-    border: none; /* Remove borda */
-    font-size: 20px; /* Tamanho do texto ajustado */
-    color: rgb(43, 226, 67); /* Cor verde neon */
+    background-color: transparent;
+    /* Remove fundo dos botões */
+    border: none;
+    /* Remove borda */
+    font-size: 20px;
+    /* Tamanho do texto ajustado */
+    color: rgb(43, 226, 67);
+    /* Cor verde neon */
     font-family: monospace;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button.btn-links:hover {
-    color: #32cd32; /* Cor levemente diferente no hover */
+    color: #32cd32;
+    /* Cor levemente diferente no hover */
 }
 
-.container{
+.container {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-.maculados{
-    background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13% , black 23%, rgb(0, 117, 128) 33%);
+.maculados {
+    background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13%, black 23%, rgb(0, 117, 128) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: underline ;
+    text-decoration: underline;
     transition: 1s;
 }
 
-.maculados:hover{
+.maculados:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.cranios{
+.cranios {
     background: linear-gradient(to right, #0dcb29 1%, rgb(231, 9, 219) 13%, blue 23%, yellow 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
 }
 
-.cranios:hover{
+.cranios:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.financeiramente{
+.financeiramente {
     background: linear-gradient(to right, #cb1d0d 1%, rgb(9, 94, 231) 13%, rgb(86, 54, 6) 23%, rgb(220, 13, 220) 33%, yellow 43%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
 }
 
-.financeiramente:hover{
+.financeiramente:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.mavericks{
+.mavericks {
     background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
 }
 
-.mavericks:hover{
+.mavericks:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.gabiru{
+.gabiru {
     background: linear-gradient(to right, #9400d9 1%, rgb(9, 76, 231) 13%, rgb(249, 18, 18) 23%, rgb(0, 0, 0) 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
 }
 
-.gabiru:hover{
+.gabiru:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.livingtech{
+.livingtech {
     background: linear-gradient(to right, #3a7dba 1%, rgb(67, 107, 200) 13%, rgb(37, 18, 249) 23%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
 }
 
-.livingtech:hover{
+.livingtech:hover {
     font-size: 30px;
     transition: 1s;
 }
 
-.infinity{
+.infinity {
     background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.container-card{
+
+.container-card {
     width: 300px;
     height: 300px;
     position: absolute;
     top: 70px;
     right: 50px;
 }
-.card{
+
+.card {
     width: 300px;
     height: 100%;
     display: flex;
@@ -313,22 +339,26 @@ button.btn-links:hover {
     border-radius: 20px;
     position: relative;
 }
-
-.card a{
+.card:hover a::before{
+    box-shadow: 0px 0px 20px white;
+}
+.card a {
     width: 100%;
     text-align: center;
     text-decoration: none;
     font-size: 22px;
+    color: white;
 }
 
-#Maculados{
-  background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07');
-  background-size: cover;
-  background-repeat: no-repeat;
+#Maculados {
+    background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-#Maculados a::after, #Maculados a::before{
+#Maculados a::after,
+#Maculados a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -344,12 +374,13 @@ button.btn-links:hover {
 }
 
 
-#Infinity{
-    background-image: url('');
+#Infinity {
+    background-image: url('tarnished/imagens/alpine.webp');
 
 }
 
-#Infinity a::after, #Maculados a::before{
+#Infinity a::after,
+#Infinity a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -359,17 +390,18 @@ button.btn-links:hover {
     height: 100%;
     border-radius: 20px;
     z-index: -1;
-    background: conic-gradient(from var(--angle), #800080, #a401a4, #e403e4, #800080);
+    background: conic-gradient(from var(--angle), #ce96ff, rgb(109, 25, 148),rgb(66, 27, 101), rgb(216, 6, 216), #ce96ff);
     padding: 3px;
     animation: spin 5s linear infinite;
 }
-
-#Financeiramente{
+ 
+#Financeiramente {
     background: bisque;
 
 }
 
-#Financeiramente a::after, #Maculados a::before{
+#Financeiramente a::after,
+#Financeiramente a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -385,12 +417,13 @@ button.btn-links:hover {
 }
 
 
-#Crânios{
+#Crânios {
     background: antiquewhite;
 
 }
 
-#Crânios a::after, #Maculados a::before{
+#Crânios a::after,
+#Crânios a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -405,11 +438,12 @@ button.btn-links:hover {
     animation: spin 5s linear infinite;
 }
 
-#Mavericks{
+#Mavericks {
     background: aqua;
 }
 
-#Mavericks a::after, #Maculados a::before{
+#Mavericks a::after,
+#Mavericks a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -424,12 +458,13 @@ button.btn-links:hover {
     animation: spin 5s linear infinite;
 }
 
-#Gabiru{
+#Gabiru {
     background: darkblue;
 
 }
 
-#Gabiru a::after, #Maculados a::before{
+#Gabiru a::after,
+#Gabiru a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -443,12 +478,13 @@ button.btn-links:hover {
     padding: 3px;
     animation: spin 5s linear infinite;
 }
- 
-#Livingtech{
+
+#Livingtech {
     background: blueviolet;
 }
 
-#Livingtech a::after, #Maculados a::before{
+#Livingtech a::after,
+#Livingtech a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -458,26 +494,28 @@ button.btn-links:hover {
     height: 100%;
     border-radius: 20px;
     z-index: -1;
-    background: conic-gradient(from var(--angle), #3a7dba, rgb(67, 107, 200), rgb(37, 18, 249), #3a7dba);
+    background: conic-gradient(from var(--angle), black, red, #066ed0, black);
     padding: 3px;
     animation: spin 5s linear infinite;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
 @keyframes spin {
-   from{
-    --angle: 0deg;
-   }
-   to{
-    --angle: 360deg;
-   }
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }
-.infinity:hover{
+
+.infinity:hover {
     font-size: 30px;
     transition: 1s;
 
