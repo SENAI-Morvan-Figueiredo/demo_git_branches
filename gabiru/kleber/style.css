@@ -30,10 +30,9 @@ ul {
     align-items: center;
     height: 500px;
     width: 100%;
-    font-size: 3em;
+    font-size: 4em;
     background-image: url(istockphoto-1335708681-612x612.jpg);
     background-size: 100%;
     background-position: 60%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
