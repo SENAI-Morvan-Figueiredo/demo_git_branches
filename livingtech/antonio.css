@@ -58,6 +58,64 @@ section {
   background-repeat: no-repeat; /* evita repetição da imagem */
   color: #ffffff; /* ajusta a cor do texto para ficar visível */
 }
+section {
+  position: relative;
+}
+
+section p, section h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+   padding: 10px;
+  border-radius: 5px;
+} 
+section a {
+  background-color: white;
+padding: 10px;
+border-radius: 5px;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os projetos */
+  flex-wrap: wrap; /* Permite quebrar linha se necessário em telas pequenas */
+  gap: 20px; /* Espaçamento entre os projetos */
+}
+
+.projeto {
+  flex: 1; /* Faz os projetos ocuparem o mesmo espaço */
+  max-width: 30%; /* Limita a largura de cada projeto */
+  position: relative; /* Necessário para o posicionamento das imagens */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-projeto {
+  display: none; /* Esconde a imagem inicialmente */
+  position: absolute;
+  top: 100%; /* Mostra a imagem abaixo do projeto */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 300px; /* Limite da largura máxima */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Garante que a imagem fique à frente */
+}
+
+
+.projeto:hover .img-projeto {
+  display: block; /* Mostra a imagem ao passar o mouse sobre o projeto */
+}
+
+@media (max-width: 768px) {
+  .projeto {
+    max-width: 100%; /* Faz os projetos ocuparem 100% da largura em telas pequenas */
+  }
+}
+
+
 
 footer {
   text-align: center;
