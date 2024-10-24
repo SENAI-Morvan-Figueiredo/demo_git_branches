@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,88 +7,133 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="carla.css">
     <link rel="shortcut icon" href="images/wind.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <div class="page-container">
+        <!-- imagem de fundo -->
+        <img id="backgroundImage" src="https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-3840x2400.jpg" alt="Background Image" class="background-image">
 
-    <!-- imagem de fundo -->
-    <img id="backgroundImage" src="https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-3840x2400.jpg" alt="Background Image" class="background-image">
+        <!-- botão burger lateral esquerda -->
+        <div class="burgers">
+            <div class="burger-wrapper">
+                <div class="burger-6" title="Procure">
+                    <input type="checkbox" id="ck-6">
+                    <label for="ck-6" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+<!--         
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="alfredo.html" class="dropdown-item" data-target="info1">Alfredo</a></li>
+                            <li><a href="emmanuel.html" class="dropdown-item" data-target="info2">Emmanuel</a></li>
+                            <li><a href="joaoh.html" class="dropdown-item" data-target="info3">João Henrique</a></li>
+                            <li><a href="joaoh.html" class="dropdown-item" data-target="info3">Maculados</a></li>
+                        </ul>
+                    </div> -->
 
-    <!-- botão burger lateral esquerda -->
-    <div class="burgers">
-        <div class="burger-wrapper">
-            <div class="burger-6" title="Procure">
-                <input type="checkbox" id="ck-6">
-                <label for="ck-6" class="toggle">
-                    <div class="bars" id="bar1"></div>
-                    <div class="bars" id="bar2"></div>
-                    <div class="bars" id="bar3"></div>
-                </label>
-
-                <div class="dropdown-menu">
-                    <ul>
-                        <li><a href="#">Opção 1</a></li>
-                        <li><a href="#">Opção 2</a></li>
-                        <li><a href="#">Opção 3</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="../index.html">Página da Sala</a></li>
+                            <li><a href="index.html">Maculados</a></li>
+                            <li><a href="alfredo.html">Alfredo</a></li>
+                            <li><a href="carla.html">Carla</a></li>
+                            <li><a href="emmanuel.html">Emmanuel</a></li>
+                            <li><a href="joaoh.html">João</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        
+        <!-- seções de informação -->
+        <div class="info-wrapper">
+            <div class="info" id="info1" href="alfredo.html">Portfolio 1 </div>
+            <div class="info" id="info2" href="emmanuel.html">Portfolio 2</div>
+            <div class="info" id="info3" href="joaoh.html">Portfolio 3</div>
+        </div>
+        
+        <!-- botão glow -->
+        <a href="#" class='button-glow'>
+            Meus projetos
+        </a>
+
+        <!-- Cabeçalho -->
+        <header class="cabecalho"> 
+            <div class="navigation__group">
+                <img class="profile" src="imagens/carla.jpeg" alt="Carla Machado">
+                <i class="fas fa-angle-down"></i> 
+                <div>
+                    <h1>Carla Machado Abi Sáber Miguel</h1>
+                    <h2>Desenvolvedora de sistemas</h2>   
+                </div>
+            </div>
+            <div class="dropdown__wrapper hide dropdown__wrapper--fade-in none">
+                <div class="dropdown__group">
+                    <div class="email">carlamasm@gmail.com</div>
+                </div>
+                <hr class="divider">
+                <nav>
+                    <ul>
+                        <li class="profile-section">
+                            <span class="knowledge" styl>Meus conhecimentos</span>
+                        </li>
+                        <li class="skills-container">
+                            <!-- Exibir habilidades com imagens e títulos -->
+                            <div class="skill-item html">
+                                <img src="imagens/html(1).png" alt="HTML">
+                                <h1 class="skill-name">HTML</h1>
+                            </div>
+                            <div class="skill-item css">
+                                <img src="imagens/styling.png" alt="CSS">
+                                <h1 class="skill-name">CSS</h1>
+                            </div>
+                            <div class="skill-item javascript">
+                                <img src="imagens/javascript.png" alt="JavaScript">
+                                <h1 class="skill-name">JavaScript</h1>
+                            </div>
+                            <div class="skill-item python">
+                                <img src="imagens/python.png" alt="Python">
+                                <h1 class="skill-name">Python</h1>
+                            </div>
+                            <div class="skill-item github">
+                                <img src="imagens/github.png" alt="Git/Github">
+                                <h1 class="skill-name">Git/Github</h1>
+                            </div>
+                            <div class="skill-item figma">
+                                <img src="imagens/figma.png" alt="Figma">
+                                <h1 class="skill-name">Figma</h1>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Footer -->
+        <footer>
+            <a class="contateme">Veja mais, me contate ou me peça um receita de pão de queijo mineiro em:</a>
+            <ul class="wrapper">
+                <li class="icon linkedin" >
+                    <a href="https://www.linkedin.com/in/carlamachadom/" target="_blank">
+                        <span class="tooltip">LinkedIn</span>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="icon github1" >
+                    <a href="https://github.com/CarlaMachadoM" target="_blank">
+                        <span class="tooltip">Github</span>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
     </div>
 
-    <!-- botão glow -->
-    <a href="#" class='button-glow'>
-        Meus projetos
-    </a>
-
-    <header class="cabecalho"> 
-        <ul>
-            <li class="dropdown">
-                <a href="#" class="menu">
-                    <h1>Carla Machado Abi Sáber Miguel
-                        <br>
-                    <h2>Desenvolvedora de sistemas</h2>   
-                        <img src="images/carla.jpeg" class="foto">
-                    </h1>
-                </a>
-                <div class="dropdown-menu"> 
-                    <article class="infos">
-                        <span class="habilidades">
-                            <h4>Habilidades:</h4>
-                            <span class="habilidades-todas">
-                                <span class="habilidade">
-                                    <p>HTML</p>
-                                    <img src="images/html (1).png" alt="html">
-                                </span>
-                                <span class="habilidade">
-                                    <p>CSS</p>
-                                    <img src="images/style-sheet.png" alt="css">
-                                </span>
-                                <span class="habilidade">
-                                    <p>JavaScript</p>
-                                    <img src="images/java-script.png" alt="JavaScript">
-                                </span>
-                                <span class="habilidade">
-                                    <p>Python</p>
-                                    <img src="images/python.png" alt="Python">
-                                </span>
-                                    <span class="habilidade">
-                                        <p>Figma</p>
-                                        <img src="images/figma.png" alt="Figma">
-                                    </span>
-                                    <span class="habilidade">
-                                        <p>Git/Github</p>
-                                        <img src="images/github.png" alt="Github">
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </article>
-                </div>
-            </li>
-        </ul>
-    </header>
-    
-
-
+    <script src="carla.js"></script>
 </body>
 </html>
