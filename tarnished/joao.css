@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
     color: white;
 }
-
-body {
+body{
     font-size: 20px;
     line-height: 35px;
     margin: 0;
@@ -16,7 +14,7 @@ body {
     background-color: black;
 }
 
-.cabecalho {
+.cabecalho{ 
     width: 100%;
     height: 35vh;
 
@@ -28,10 +26,10 @@ body {
     align-items: flex-start;
     gap: 100px;
 
-    background: linear-gradient(to bottom, #daa520, #2C4845, rgb(0, 0, 8) 90%);
+    background: linear-gradient(to bottom, #daa520, #2C4845 , rgb(0, 0, 8) 90%);
 }
 
-.foto {
+.foto{
     background-image: url("jh-img/foto_perfil_linkedin.jpeg.jfif");
     background-size: 200px;
     background-position: 100% 80%;
@@ -40,20 +38,19 @@ body {
     height: 200px;
 }
 
-.habilidade {
+.habilidade{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 }
 
-.habilidade img {
+.habilidade img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
-
-.habilidades-todas {
+.habilidades-todas{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,53 +59,54 @@ body {
 }
 
 
-.container {
-    width: 80%;
-    height: fit-content;
-    padding: 20px;
-    margin: 60px auto auto auto;
-    background: #2C4845;
-    border-top-left-radius: 60px 80px;
-    border-top-right-radius: 60px 80px;
-}
-
-.menu-lateral {
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-.menu-lateral a {
-    text-decoration: none;
-    font-size: 30px;
-    color: #daa520;
+.container{
+width: 80%;
+height: fit-content;
+padding: 20px;
+margin: 60px auto auto auto;
+background:#2C4845 ;
+border-top-left-radius: 60px 80px;
+border-top-right-radius: 60px 80px;
 
 }
 
-.menu-lateral div {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
-    width: 100%;
+.menu-lateral{
+height: fit-content;
+width: fit-content;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 40px;
+position: fixed;
+left: 0;
+top: 0;
 }
 
-.menu-lateral div p {
-    display: none;
-    font-size: 15px;
-    font-weight: 800;
+.menu-lateral a{
+text-decoration: none;
+font-size: 22px;
+color: #2C4845;
+
 }
 
-.icones {
-    width: 100px;
-    height: 100px;
+.menu-lateral div{
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+width: 100%;    
+}
+
+.menu-lateral div p{
+display: none;
+font-size: 18px;
+font-weight: 800;
+}
+
+.icones{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -121,78 +119,77 @@ body {
     box-shadow: 0px 0px 20px #2C4845;
 }
 
-.icones:hover+* {
+.icones:hover + *{
     display: flex;
     background: #2C4845;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 5px 5px 20px #daa520;
+    text-shadow: 2px 2px 20px white;
 }
 
-.icones img {
-    width: 70px;
-    height: 70px;
+.icones img{
+    width: 35px;
+    height: 35px;
 }
 
-.sobre {
+.sobre{
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap:50px;
 }
-
-.sobre h1 {
+.sobre h1{
     color: #daa520;
     width: fit-content;
 }
 
-.texto-branco {
+.texto-branco{
     color: white;
     padding: 10px;
 }
 
-.texto-roxo {
+.texto-roxo{
     color: #daa520;
     padding: 10px;
 }
 
-.artigo-sobre {
+.artigo-sobre{
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
     width: 100%;
 }
 
-.artigo-sobre img {
+.artigo-sobre img{
     width: 300px;
     height: auto;
     object-fit: fill;
     border-radius: 25px;
 }
 
-.sobre-info {
+.sobre-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.sobre-info div:nth-last-child(1) {
+.sobre-info div:nth-last-child(1){
     gap: 20px;
     font-size: 30px;
 }
 
-.sobre-info div a i:hover {
+.sobre-info div a i:hover{
     border-radius: 50%;
-    background-color: #2C4845;
-    box-shadow: 0px 0px 20px;
+    background-color:#2C4845 ;
+    box-shadow: 0px 0px 20px ;
 }
 
-.sobre-info p {
+.sobre-info p{
     text-align: justify;
 }
 
-.certificados .imagens-flex {
+.certificados .imagens-flex{
     margin-top: 5%;
     display: flex;
     flex-direction: row;
@@ -201,42 +198,41 @@ body {
     width: 100%;
     transform-style: preserve-3d;
     transform: perspective(1000px);
-
+    
 }
 
-.item,
-.item img {
+.item, .item img{
     width: fit-content;
     filter: opacity(0.6);
 }
 
-.certificados .item {
+.certificados .item{
     filter: brightness(0.2) blur(1px);
     transition: all 0.4s linear;
 
 }
 
-.certificados .item:hover {
+.certificados .item:hover{
     filter: brightness(1);
     transform: translateZ(30px);
 }
 
-.certificados .item:hover img {
+.certificados .item:hover img{
     filter: opacity(1);
 }
 
-.imagens-flex img {
+.imagens-flex img{
     width: 220px;
     height: 220px;
     border-radius: 20px;
 }
 
-.certificados .link-certificados {
+.certificados .link-certificados{
     width: 100%;
     margin-top: 20px;
 }
 
-.link-certificados a {
+.link-certificados a{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -244,27 +240,27 @@ body {
     transition: all 0.4s linear;
 }
 
-.link-certificados a:hover {
+.link-certificados a:hover{
     filter: brightness(1);
     text-shadow: 0px 0px 5px white;
 }
 
-.projetos {
+.projetos{
     width: 80%;
     margin: 60px auto 10px auto;
     border-top: 1px solid white;
     padding-top: 40px;
 }
 
-.projetos h1 {
+.projetos h1{
     font-size: 22px;
 }
 
-.projetos h2 {
+.projetos h2{
     font-size: 20px;
 }
 
-.alinhar-texto {
+.alinhar-texto{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -272,15 +268,15 @@ body {
     width: 100%;
 }
 
-.alinhar-texto-esquerda {
+.alinhar-texto-esquerda{
     display: flex;
     flex-direction: row;
     gap: 15px;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 2% ;
 }
 
-.projetos-flex {
+.projetos-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,7 +284,7 @@ body {
 
 }
 
-.projetos-uni {
+.projetos-uni{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,7 +292,7 @@ body {
 
 }
 
-.projeto {
+.projeto{
     overflow: hidden;
     margin: auto;
     height: 100%;
@@ -304,8 +300,7 @@ body {
     border-radius: 10px;
 }
 
-.projetos-flex::after,
-.projetos-flex::before {
+.projetos-flex::after, .projetos-flex::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -318,32 +313,31 @@ body {
     border-radius: 10px;
 }
 
-.projetos-flex::before {
+.projetos-flex::before{
     filter: blur(1.0rem);
     opacity: 0.5rem;
 }
 
-.projeto .slide-track {
+.projeto .slide-track{
     display: flex;
     animation: slider 12s linear infinite;
     -webkit-animation: slider 12s linear infinite;
     width: calc(650px*8);
 }
-
-.projeto .slide-solid {
+.projeto .slide-solid{
     display: flex;
 }
 
-.projeto .slide {
+.projeto .slide{
     width: 650px;
 }
 
-.projeto .slide img {
+.projeto .slide img{
     width: 100%;
     height: 100%;
 }
 
-.info-do-projeto {
+.info-do-projeto{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -353,7 +347,7 @@ body {
     backdrop-filter: blur(3px);
 }
 
-.info-do-projeto a {
+.info-do-projeto a{
     text-decoration: none;
 
     width: 200px;
@@ -361,16 +355,16 @@ body {
 
     text-align: center;
     padding-top: 5px;
-
+    
     border-radius: 20px;
 
-    background-color: #daa520;
+    background-color:#daa520;
 
     margin: 0 auto 0 auto;
     transition: all 0.5s ease-in;
 }
 
-.info-do-projeto a:hover {
+.info-do-projeto a:hover{
     border-top: 2px solid #daa520;
     border-bottom: 2px solid #daa520;
     box-shadow: 0px 0px 30px #daa520;
@@ -378,7 +372,7 @@ body {
     font-size: 18px;
 }
 
-.projeto:hover .info-do-projeto {
+.projeto:hover .info-do-projeto{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -390,12 +384,11 @@ body {
 }
 
 @keyframes slider {
-    0% {
+    0%{
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-
-    100% {
+    100%{
         -webkit-transform: translateX(calc(-650px * 4));
         transform: translateX(calc(-650px * 4));
     }
