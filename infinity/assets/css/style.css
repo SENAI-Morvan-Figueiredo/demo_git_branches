@@ -1,0 +1,137 @@
+
+
+/* Juan */
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+.topoLegal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.topoLegal h1{
+    padding: 40px 0;
+    font-size: 3.5em;
+}
+
+.topoLegal div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.topoLegal h2{
+    font-size: 1.5em;
+}
+
+.topoLegal img{
+    border-radius: 10%;
+    width: 70px;
+    height: 70px;
+}
+
+/* Bruno */
+.toy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    color: black;
+    padding: 100 px;
+
+
+}
+.bus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.mario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    
+}
+/* João */
+.ori {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Danfo", serif;
+}
+
+.point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point p {
+    margin-top: 10px;
+    width: 300px;
+    text-align:justify;
+    text-indent: 1.3em;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Danfo", serif;
+}
+
+.hab h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desenvolvimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.desenvolvimento p{
+    margin-top: 10px;
+    width: 300px;
+    text-align:justify;
+    text-indent: 1.3em;
+}
+
+
+.fotuenha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .fotuenha img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+ }
+
+
+
+/* Isabella */
+
+
