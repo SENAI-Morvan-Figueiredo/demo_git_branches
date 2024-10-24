@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,22 @@
             padding: 20px;
             margin: 0;
         }
+
         h1 {
             color: #333;
         }
+
         .funny-image {
-            width: 150px; /* Reduzido o tamanho da imagem para garantir que não haja rolagem */
+            width: 150px;
+            /* Reduzido o tamanho da imagem para garantir que não haja rolagem */
             margin-top: 10px;
         }
+
         p {
             font-size: 16px;
             color: #666;
         }
+
         .butt-button {
             padding: 8px 16px;
             background-color: #ffcc00;
@@ -32,16 +38,71 @@
             font-size: 16px;
             margin-top: 15px;
         }
+
         .butt-button:hover {
             background-color: #ff9900;
         }
+
+        header {
+            background: #e62a54;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ddd;
+        }
+
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="antonio.html">Antonio</a></li>
+                <li><a href="danilo.html">Danilo</a></li>
+                <li><a href="david.html">David</a></li>
+                <li><a href="gabriel.html">Gabriel</a></li>
+                <li><a href="pedro.html">Pedro</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Ops! O Bart foi pego em flagrante!</h1>
     <p>Cuidado! Ele pode aprontar a qualquer momento... 😜</p>
     <img src="/livingtech/imagens/bart.png" alt="Imagem engraçada" class="funny-image">
     <p>Pressione o botão abaixo, mas não diga que eu não avisei!</p>
-    <button class="butt-button" onclick="alert('Bart mandou um recado: Beijinho no ombro! 😆')">Mostrar a Travessura</button>
+    <button class="butt-button" onclick="alert('Bart mandou um recado: Beijinho no ombro! 😆')">Mostrar a
+        Travessura</button>
 </body>
+
 </html>
