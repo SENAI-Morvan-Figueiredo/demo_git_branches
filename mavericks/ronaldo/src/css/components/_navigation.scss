@@ -1,0 +1,13 @@
+.nav__box{
+      display: flex;
+      width: 100%;
+      background-color: blue;
+      .nav__left{
+            flex-grow: 5;
+            background-color: aqua;
+      }
+      .nav__search{
+            flex-grow: 1;
+            background-color: pink;
+      }
+}

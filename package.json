@@ -1,0 +1,9 @@
+{
+
+  "devDependencies": {
+    "sass": "^1.80.4"
+  },
+  "scripts": {
+    "sass_ronaldo": "sass --watch mavericks/ronaldo/src/css:mavericks/ronaldo/css"
+  }
+}
