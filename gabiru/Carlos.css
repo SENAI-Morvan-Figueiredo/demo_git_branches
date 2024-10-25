@@ -1,47 +1,224 @@
+/* Estilos gerais - Reseta as margens e padding para garantir consistência em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a família de fontes padrão, e remove as margens e paddings no corpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Permite o uso do pseudo-elemento com posição absoluta */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    }
-    
-    header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    }   
-    
-    nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    }
-    
-    nav li {
-    display: inline-block;
-    margin-right: 10px;
-    }   
-    
-    section {
-    padding: 20px;
-    }
-    
-    footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    }
-    
-    .bebas-neue-regular {
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+}
 
+/* Pseudo-elemento ::before para adicionar a imagem de fundo com 50% de transparência */
+body::before {
+    content: ""; /* Cria um elemento vazio que será usado para a imagem de fundo */
+    position: absolute; /* Faz o pseudo-elemento ocupar toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz com que a imagem de fundo cubra toda a largura da página */
+    height: 100%; /* Faz com que a imagem de fundo cubra toda a altura da página */
+    background-image: url('/gabiru/imagens/background-image.JPEG'); /* Define o caminho da imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área, ajustando-se ao tamanho da tela */
+    background-position: center; /* Centraliza a imagem de fundo na tela */
+    opacity: 0.4; /* Aplica 50% de transparência na imagem de fundo */
+    z-index: -1; /* Coloca a imagem de fundo atrás de todo o conteúdo da página */
+}
 
+/* Adiciona uma camada de proteção aos outros elementos da página para que fiquem acima da imagem de fundo */
+body > * {
+    position: relative; /* Garante que todo o conteúdo do corpo da página seja posicionado acima do pseudo-elemento */
+    z-index: 1; /* Coloca o conteúdo da página em um nível acima da imagem de fundo */
+}
 
-ul {
-    display: flex;
-    flex-direction: row;
+/* Estilos do Header (cabeçalho) */
+header {
+    background-color: #fff; /* Define a cor de fundo do cabeçalho como branco */
+    padding: 20px; /* Adiciona espaço interno ao cabeçalho */
+    display: flex; /* Usa Flexbox para posicionar os elementos dentro do cabeçalho */
+    justify-content: space-between; /* Coloca o logo e a navegação em extremidades opostas */
+    align-items: center; /* Alinha verticalmente o logo e a navegação */
+    box-shadow: 0 4px 2px -2px gray; /* Adiciona uma sombra no cabeçalho para dar profundidade */
+}
+
+/* Estilos do logo dentro do cabeçalho */
+.logo {
+    display: flex; /* Usa Flexbox para alinhar o ícone e o nome juntos */
+    align-items: center; /* Alinha verticalmente o ícone e o nome */
+}
+
+/* Tamanho e espaçamento do ícone do logo */
+.logo-icon {
+    width: 40px; /* Largura do ícone do logo */
+    height: 40px; /* Altura do ícone do logo */
+    margin-right: 10px; /* Espaçamento entre o ícone e o nome do logo */
+}
+
+/* Estilo do nome no logo (Cadu Nunes) */
+.logo h1 {
+    font-size: 24px; /* Tamanho da fonte para o nome */
+    color: #333; /* Cor do texto (cinza escuro) */
+    margin: 0; /* Remove margens ao redor do título */
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Usa Flexbox para posicionar os itens da lista horizontalmente */
+    gap: 20px; /* Adiciona um espaçamento entre os itens de navegação */
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor dos links */
+    font-weight: bold; /* Faz o texto dos links ser negrito */
+    font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+/* Estilos para a seção hero */
+.hero {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz com que a seção ocupe toda a altura da viewport */
+    background-color: transparent; /* Mantém o fundo transparente ou ajusta conforme necessário */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o conteúdo da seção hero */
+.hero-content {
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha para melhor leitura */
+    color: #000000; /* Cor do texto (cinza claro) */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Botão principal dentro da seção hero */
+.btn-primary {
+    background-color: #f7c500; /* Cor de fundo amarelo */
+    color: #000000; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno no botão */
+    text-decoration: none; /* Remove sublinhado no link */
+    font-size: 25px; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Deixa as bordas do botão arredondadas */
+    display: inline-block; /* Faz o botão se comportar como bloco inline */
+    margin-top: 20px; /* Adiciona espaçamento acima do botão */
+}
+
+/* Estilo padrão para todas as seções */
+section {
+    padding: 60px 20px; /* Espaçamento interno de 60px no topo e embaixo, e 20px nas laterais */
+}
+
+/* Contêiner centralizado para todo o conteúdo das seções */
+.container {
+    max-width: 1100px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Títulos das seções */
+h2 {
+    text-align: center; /* Centraliza os títulos das seções */
+    font-size: 36px; /* Tamanho grande da fonte */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+/* Parágrafo na seção "Sobre Mim" */
+#sobre p {
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha para melhor leitura */
+    color: #000000; /* Cor do texto (cinza claro) */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo da lista de habilidades */
+#habilidades .skills {
+    display: flex; /* Usa Flexbox para alinhar os itens de habilidade */
+    justify-content: center; /* Centraliza a lista de habilidades */
+    gap: 20px; /* Espaçamento entre as habilidades */
+    flex-wrap: wrap; /* Permite que a lista quebre linhas caso necessário */
+}
+
+/* Estilo individual de cada habilidade */
+.skills li {
+    list-style: none; /* Remove os marcadores de lista */
+    background-color: #333; /* Fundo escuro para cada habilidade */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 30px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Parágrafo na seção de projetos */
+#projetos p {
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    color: #000000; /* Cor do texto (cinza claro) */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Texto do rodapé */
+footer p {
+    margin: 0; /* Remove margens do parágrafo */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Seção de ícones sociais */
+.social-icons {
+    margin-top: 20px; /* Espaçamento acima dos ícones sociais */
+    display: flex; /* Usa Flexbox para posicionar os ícones */
+    justify-content: center; /* Centraliza os ícones */
+}
+
+/* Estilos dos ícones sociais */
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    display: inline-block; /* Faz com que os ícones fiquem lado a lado */
+}
+
+.social-icons img {
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    transition: transform 0.3s; /* Adiciona uma transição suave para o hover */
+}
+
+/* Efeito de zoom ao passar o mouse sobre os ícones */
+.social-icons img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone quando o mouse passa sobre ele */
+}
+
+/* Seção de contato */
+#contato {
+    padding: 40px 20px; /* Espaçamento interno da seção de contato */
+    text-align: center; /* Centraliza o conteúdo da seção de contato */
+    background-color: #f0f0f0; /* Cor de fundo clara para a seção de contato */
+}
+
+#contato a {
+    display: inline-block; /* Alinha os ícones de contato lado a lado */
+    margin: 20px; /* Espaçamento ao redor dos ícones de contato */
+}
+
+#contato img {
+    width: 40px; /* Largura dos ícones de contato */
+    height: 40px; /* Altura dos ícones de contato */
+    transition: transform 0.3s; /* Adiciona uma transição suave para o hover */
+}
+
+/* Efeito de zoom ao passar o mouse sobre os ícones de contato */
+#contato img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone no hover */
 }
