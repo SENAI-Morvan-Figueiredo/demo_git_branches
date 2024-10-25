@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
     margin: 0px;
     border: 0px;
+    box-sizing: border-box;
 }
 
 header {
@@ -14,6 +16,7 @@ header {
     background-color: rgba(13, 13, 176, 0.548);
     height: 50px;
     padding: 0px 5px 0px 20px;
+    font-family: "Permanent Marker", cursive;
 }
 
 ul {
@@ -26,13 +29,19 @@ ul {
 }
 
 li {
-    height: 20px;
+    /*Flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
     background-color: rgba(61, 61, 148, 0);
     border-radius: 10px;
+    padding: 0px 3px 0px 3px;
+    text-align: center;
 }
 
 li:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) inset, -2px -2px 2px rgba(148, 148, 232, 0.548) inset;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2) inset, -2px -2px 2px rgba(148, 148, 232, 0.548) inset;
 }
 
 #entrada {
@@ -51,5 +60,16 @@ li:hover {
 
 #logo {
     background-color: conic-gradient(red,blue,red);
-    
+
+}
+
+.livro {
+    background-color: blue;
+    height: 400px;
+    width: 100%;
+    padding: 20px 10px 10px 20px;
+}
+
+.livro img {
+    height: 80%;
 }
