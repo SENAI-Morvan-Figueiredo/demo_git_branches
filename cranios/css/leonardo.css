@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #3a3a3a;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FotoDePerfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 0;
+    background-color: #fff;
+    margin: 30px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#SobreMim p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#Habilidades .Skills {
+    margin-bottom: 20px;
+}
+
+.Skills h3 {
+    font-size: 1.5rem;
+}
+
+.BarraDeSkills {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.NivelDeSkills {
+    background-color: #28a745;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .RedesSociais {
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer .RedesSociais li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .RedesSociais li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.NivelDeSkills {
+    transition: width 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #Habilidades .Skills h3 {
+        font-size: 1.3rem;
+    }
+}
