@@ -1,0 +1,66 @@
+body{
+    background-image: url(../financeiramente/lebronto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.bloco1{
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+
+}
+
+.bloco2{
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+
+}
+
+.bloco3{
+    background-color: blueviolet;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+
+}
+
+.bloco4{
+    background-color: blueviolet;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+
+}
+
+.bloco5{
+    background-color: blueviolet;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+
+}
+
+.lateraldir{
+    flex-flow: wrap;
+    
+}
