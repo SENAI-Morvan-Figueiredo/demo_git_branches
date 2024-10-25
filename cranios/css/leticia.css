@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+} 
+.wrapper{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.titulo h1{
+    text-align: center;
+    margin-block: 20px;
+    font-size: 45px;
+    color: #cd1515;
+}
+.imagemprincipal {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.imagemprincipal img{
+    width: 100%;
+    height: 70%;
+}
+.textoprincipal {
+    margin-block: 20px;
+    text-align: justify;
+}
+.listapersonagens{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.listapersonagens li {
+    border: 3px solid #cd1515;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+    background-color: #cd151598;
+}
+.listapersonagens li a{
+    color: #cd1515;
+    font-weight: bold;
+}
