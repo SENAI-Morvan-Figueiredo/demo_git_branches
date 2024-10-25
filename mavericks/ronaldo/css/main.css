@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 95vh;
+}
+
+.linha {
+  display: flex;
+  height: 100%;
+}
+
+.celula {
+  border: solid 1px rgb(251, 51, 161);
+  width: 100%;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: lightgreen;
+  /* Cor para a célula correta */
+}
+
+.incorrect {
+  background-color: lightcoral;
+  /* Cor para a célula incorreta */
+}
+
+/*# sourceMappingURL=main.css.map */
