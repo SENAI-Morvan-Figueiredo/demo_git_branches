@@ -249,6 +249,7 @@ button.btn-links {
   padding-inline: 18px;
   margin-inline: 10px; /* Espaço entre os botões */
   line-height: 30px;
+  width: fit-content;
 }
 
 
@@ -270,7 +271,7 @@ button.btn-links:hover {
 }
 
 .maculados {
-    background: linear-gradient(to right, #40d292 3%, rgb(196, 180, 36) 13%, black 23%, rgb(0, 117, 128) 33%);
+    background: linear-gradient(to right, #40d292 , rgb(196, 180, 36) 23%, black 53%, rgb(0, 117, 128) 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -282,7 +283,7 @@ button.btn-links:hover {
 }
 
 .cranios {
-    background: linear-gradient(to right, #0dcb29 1%, rgb(231, 9, 219) 13%, blue 23%, yellow 33%);
+    background: linear-gradient(to right, #0dcb29 , rgb(231, 9, 219) 23%, blue 53%, yellow 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -294,7 +295,7 @@ button.btn-links:hover {
 }
 
 .financeiramente {
-    background: linear-gradient(to right, #cb1d0d 1%, rgb(9, 94, 231) 13%, rgb(86, 54, 6) 23%, rgb(220, 13, 220) 33%, yellow 43%);
+    background: linear-gradient(to right, #cb1d0d , rgb(9, 94, 231) 23%, rgb(86, 54, 6) 53%, rgb(220, 13, 220) 63%, yellow 83%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -306,7 +307,7 @@ button.btn-links:hover {
 }
 
 .mavericks {
-    background: linear-gradient(to right, #8f0dcb 1%, rgb(231, 9, 216) 13%, rgb(249, 215, 25) 23%, rgb(13, 113, 220) 33%);
+    background: linear-gradient(to right, #8f0dcb, rgb(231, 9, 216) 23%, rgb(249, 215, 25) 53%, rgb(13, 113, 220) 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -318,7 +319,7 @@ button.btn-links:hover {
 }
 
 .gabiru {
-    background: linear-gradient(to right, #9400d9 1%, rgb(9, 76, 231) 13%, rgb(249, 18, 18) 23%, rgb(0, 0, 0) 33%);
+    background: linear-gradient(to right, #9400d9 , rgb(9, 76, 231) 23%, rgb(249, 18, 18) 53%, rgb(0, 0, 0) 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -350,9 +351,9 @@ button.btn-links:hover {
 .container-card {
     width: 300px;
     height: 300px;
-    position: absolute;
-    top: 70px;
-    right: 50px;
+    margin-left: 40%;
+    margin-top: -90px;
+    
 }
 
 .card {
@@ -401,7 +402,7 @@ button.btn-links:hover {
 
 
 #Infinity {
-    background-image: url('tarnished/imagens/alpine.webp');
+    background: brown;
 
 }
 
