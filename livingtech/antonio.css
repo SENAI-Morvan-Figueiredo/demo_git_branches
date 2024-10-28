@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* Estilos normais do botão */
+nav a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #35424a; 
+  color: #fff; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  /*transition: background-color 0.3s ease, color 0.3s ease;*/
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Inclui transform */ 
+  perspective: 1000px; /* Define a perspectiva para um efeito 3D */
+}
+
+/* Estilos ao passar o mouse */
+nav a:hover {
+  background-color: #ddd; 
+  color: #35424a; 
+  animation: tremido 0.6s; /* Aplica a animação */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra mais intensa ao passar o mouse */
+  transform: scale(1.4); /* Aumenta o tamanho do botão */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efeito de brilho */
+  animation: girarY 0.5s; /* Aplica a animação de giro */
+}
+
+/* Define a animação girar */
+@keyframes girarY {
+  from {
+    transform: rotateY(0deg); /* Posição inicial */
+  }
+  to {
+    transform: rotateY(360deg); /* Rotação completa */
+  }
+}
+
+/* Define a animação tremido */
+@keyframes tremido {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+/*nav a {
+  /*display: inline-block; /* Faz o link se comportar como um elemento bloco */
+  /*padding: 10px 20px; /* Adiciona um espaço interno para parecer um botão */
+  /*background-color: #35424a; /* Cor de fundo normal do link */
+ /* color: #fff; /* Cor do texto */
+  /*border-radius: 10px; /* Borda arredondada */
+  /*text-decoration: none; /* Remove o sublinhado padrão do link */
+ /* transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição */
+}
+
+/* nav a:hover {
+  background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
+  /* color: #35424a; /* Cor do texto ao passar o mouse */
+} 
+
+
+/* nav a:hover {
+  text-decoration: underline;
+  color: yellowgreen;
+} */
+
+
+
+/* nav a {
+  color: #ffffff;
+  text-decoration: none;
+} */
+@media (max-width: 600px) {
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: #080112;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 50%; /* limita a largura a 50% da tela */
+  background-image: url('https://ravel.com.br/blog/wp-content/uploads/2023/02/Tendencias-de-tecnologia-2023-Capa.jpg'); /* caminho da sua imagem */
+  background-size: cover; /* cobre toda a área da seção */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição da imagem */
+  color: #ffffff; /* ajusta a cor do texto para ficar visível */
+}
+section {
+  position: relative;
+}
+
+section p, section h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+   padding: 10px;
+  border-radius: 5px;
+} 
+section a {
+  background-color: white;
+padding: 10px;
+border-radius: 5px;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os projetos */
+  flex-wrap: wrap; /* Permite quebrar linha se necessário em telas pequenas */
+  gap: 20px; /* Espaçamento entre os projetos */
+}
+
+.projeto {
+  flex: 1; /* Faz os projetos ocuparem o mesmo espaço */
+  max-width: 30%; /* Limita a largura de cada projeto */
+  position: relative; /* Necessário para o posicionamento das imagens */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-projeto {
+  display: none; /* Esconde a imagem inicialmente */
+  position: absolute;
+  top: 100%; /* Mostra a imagem abaixo do projeto */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 300px; /* Limite da largura máxima */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Garante que a imagem fique à frente */
+}
+
+
+.projeto:hover .img-projeto {
+  display: block; /* Mostra a imagem ao passar o mouse sobre o projeto */
+}
+
+@media (max-width: 768px) {
+  .projeto {
+    max-width: 100%; /* Faz os projetos ocuparem 100% da largura em telas pequenas */
+  }
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #35424a;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

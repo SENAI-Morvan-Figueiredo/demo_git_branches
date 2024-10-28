@@ -1,0 +1,27 @@
+body {
+    background-color: aquamarine;
+
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+a {
+    padding: 10px;
+}
+ 
+li {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+
+.inicio {
+    background-color: antiquewhite;
+    margin-top: -10px;
+
+}

@@ -1,0 +1,21 @@
+
+.linha {
+      display: flex;
+      height: 100%;
+}
+
+.celula {
+      border: solid 1px $main-color;
+      width: 100%;
+      cursor: pointer;
+}
+
+.correct {
+      background-color: lightgreen;
+      /* Cor para a célula correta */
+}
+
+.incorrect {
+      background-color: lightcoral;
+      /* Cor para a célula incorreta */
+}

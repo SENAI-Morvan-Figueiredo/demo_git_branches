@@ -117,3 +117,8 @@ main {
   padding: 5%;
     color: azure;
 }
+.button{
+  height: 40px;
+  width: 50px;
+  background-color: #daa520;
+}
