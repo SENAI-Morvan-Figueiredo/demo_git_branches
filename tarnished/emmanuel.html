@@ -15,7 +15,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-           
+            background-attachment: fixed;
         }
         header{
             width: 100%;
@@ -59,7 +59,7 @@
         
 
         .video{
-            margin: auto;
+            margin: 20px auto 0px auto;
             width: fit-content;
         }
         main{
@@ -89,6 +89,8 @@
         .list .item{
             transition: .5s;
             filter: brightness(0.4);
+            position: relative;
+            width: fit-content;
         }
 
         .list .item:hover{
@@ -121,6 +123,27 @@
             height: 220px;
             object-fit: cover;
         }
+        .link-portfolio{
+            backdrop-filter: blur(16px);
+            width: fit-content;
+            height: fit-content;
+            padding: 20px;
+            margin: 20px auto 20px auto;
+            border-radius: 20px;
+            border: 2px dashed white;
+            position: relative;
+        }
+        .link-portfolio a{
+            background: linear-gradient(to right, blueviolet , orange);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        .link-portfolio:hover{
+            box-shadow: 0px 0px 15px white inset;
+        }
     </style>
 </head>
 <body>
@@ -134,7 +157,7 @@
             <a href="joaoh.html">João</a>
         </menu>
     </header>
-    <h1>video fnaf</h1>
+    
     <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6aaKibLFF-I?si=dYYmnfMHseOtOz-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
@@ -150,6 +173,10 @@
             <div class="item"><img src="imagens/ferrari.avif" alt="#"></div>
             <div class="item"><img src="imagens/vcarb.jpg" alt="#"></div>
             <div class="item"><img src="imagens/williams.webp" alt="#"></div>
+        </div>
+
+        <div class="link-portfolio">
+            <a href="http://emmanuelfranco.vercel.app">Meu Portfólio</a>
         </div>
     </main>
 
