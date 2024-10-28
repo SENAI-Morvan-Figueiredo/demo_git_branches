@@ -9,9 +9,10 @@
 /* Configurações da página */
 body {
     background-image: linear-gradient(to bottom, #6523B6, #EE7221);
-    min-height: 300vh;
+    min-height: 160vh;
 }
 
+/* Menu de navegação */
 nav {
     display: flex;
     flex-direction: row;
@@ -23,35 +24,6 @@ nav {
     background-color: #6523b6;
     border-bottom-style: solid;
     border-color: rgba(0, 0, 0, 0.4);
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-content: center;
-}
-
-.card {
-    width: 70%;
-    height: 60%;
-    border-radius: 30px;
-    margin-top: 5%;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* Controle de textos */
-h1 {
-    padding: 2%;
-    text-align: center;
-    color: black;
-}
-
-h2 {
-    padding: 2%;
-    margin-top: auto;
-    text-align: center;
-    color: #EE7221;
 }
 
 li {
@@ -70,17 +42,101 @@ li a:hover {
     background-color: #EE7221;
 }
 
-.texto {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+/* Título */
+h1 {
+    padding: 2%;
+    text-align: center;
     color: white;
 }
 
-/* Controle de Imagens */
+/* Imagem de Perfil */
 .perfil{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+}
+
+/* Controle dos cards das seções */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Textos da primeira seção */
+h2 {
+    padding: 2%;
+    margin-top: auto;
+    text-align: center;
+    color: #EE7221;
+}
+
+.texto {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+    color: white;
+}
+
+/* Cards da segunda seção */
+.times{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.times div{
+    width: 27%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 2%;
+}
+
+/* Textos da serceira seção */
+h3{
+    color: white;
+}
+
+ol{
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+/* Imagem da segunda seção */
+.times div img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 5%;
+}
+
+/* Rodapé */
+footer{
+    width: 100%;
+    height: 40px;
+    margin-top: 2%;
+    background-color: #EE7221;
+    text-align: center;
+    color: white;
+    border-top-style: solid;
+    border-color: rgba(0, 0, 0, 0.4);
 }
