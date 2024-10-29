@@ -1,549 +1,240 @@
 :root {
     --bg: #F6F8FC;
-    --primary: #d9d20f;
+    --primary: #31d90f;
     --secondary: #e36f58;
     --h2-color: #5B5D72;
     --text: white;
-    --cube-side: 2.75rem;
-    --cube-side-half: calc(var(--cube-side) / 2);
-    --border-radius: 2rem;
-    --bg: #060D23;
-    --btn-bg: #e36f58;
+    --border-radius: 1rem;
+    --dropdown-bg: rgba(0, 0, 0, 0.7);
+    --dropdown-hover-bg: #ffefb6;
+    --dropdown-hover-color: #ffffff;
+    --btn-bg: #ffffff00;
     --glow-size: 0.5rem;
 }
 
 body {
     margin: 0;
     background-image: url('https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-
-* {
-    width: 100%;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    width: 100%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
-    margin-left: 450px;
-    backdrop-filter: blur(4px);
-    border: 1px solid white;
-    width: 440px;
-    background-color: rgba(255, 255, 255, 0.08);
-    margin-top: 10px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: var(--border-radius);
+    max-width: 90%;
+    margin: 1rem auto;
+    box-shadow: 0 0 5px black;
 }
 
-h1{
-  font-family: monospace;
-  font-size: 40px;
-  color: #d99c0f;
-}
-
-h3{
-  font-family: monospace;
-  font-size: 30px;
-  color: #c6931d;
-  margin-left: 300px;
-  
-}
-
-
-button{
-    font-size: 30px;
-    color: rgb(43, 226, 67);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+h1 {
+    font-size: 2rem;
+    color: #dc241c;
     font-family: monospace;
-    gap: 10px;
+    text-decoration: solid;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0;
+    font-family: monospace;
+}
+
+/* Estilos para os botões do dropdown */
+button.btn-links {
+    background-color: transparent;
+    border: none;
+    color: #dc241c;
+    font-size: 1rem;
+    font-family: monospace;
     cursor: pointer;
-    width: 800px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    width: 100%;
 }
 
-.botoes button {
-    font-size: 30px;
-    color: rgb(43, 226, 67);
-    font-family: monospace;
-    height: 40px;
+button.btn-links:hover {
+    color: #dc241c;
+    background-color: var(--dropdown-hover-bg);
+    border-radius: var(--border-radius);
+    transform: scale(1.05);
 }
 
-/* burgers */
+/* Burgers */
 .burgers {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 6.5rem 6.5rem 6.5rem;
-    grid-template-rows: 8rem 8rem;
-    gap: 2rem;
-    align-items: center;
-    margin-top: -150px;
-    margin-left: 20px;
-
-}
-
-.burger-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    height: 4.5rem;
-
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-/* burger 06 */
 .burger-6 #ck-6 {
     display: none;
-    background-color: #3a7dba;
 }
 
 .burger-6 .toggle {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    transition-duration: .5s;
-
+    width: 2rem;
+    gap: 5px;
+    cursor: pointer;
 }
 
 .burger-6 .bars {
     width: 100%;
-    height: 5px;
-    background: var(--primary);
-    border-radius: 6px;
-    box-shadow: 0 2px 8px black;
+    height: 4px;
+    background: #dc241c;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
-.burger-6 #bar2 {
-    transition-duration: .8s;
-}
-
-.burger-6 #bar1,
-#bar3 {
-    width: 70%;
-}
-
-.burger-6 input[type='checkbox']:checked+.toggle .bars {
+.burger-6 input[type='checkbox']:checked + .toggle .bars {
     position: absolute;
-    transition-duration: .5s;
 }
 
-.burger-6 input[type='checkbox']:checked+.toggle #bar2 {
+.burger-6 input[type='checkbox']:checked + .toggle #bar2 {
     transform: scaleX(0);
-    transition-duration: .5s;
 }
 
-.burger-6 input[type='checkbox']:checked+.toggle #bar1 {
-    width: 100%;
-    transform: rotate(45deg);
-    transition-duration: .5s;
+.burger-6 input[type='checkbox']:checked + .toggle #bar1 {
+    transform: rotate(45deg) translate(0.3rem, 0.3rem);
 }
 
-.burger-6 input[type='checkbox']:checked+.toggle #bar3 {
-    width: 100%;
-    transform: rotate(-45deg);
-    transition-duration: .5s;
+.burger-6 input[type='checkbox']:checked + .toggle #bar3 {
+    transform: rotate(-45deg) translate(0.3rem, -0.3rem);
 }
 
-.burger-6 input[type='checkbox']:checked+.toggle {
-    transition-duration: .5s;
-    transform: rotate(180deg);
-}
-
-/* burger dropdown */
+/* Dropdown */
 .burger-6 .dropdown-menu {
     display: none;
-    /* Oculto por padrão */
     position: absolute;
-    top: 4.5rem;
-    /* Ajuste a posição conforme necessário */
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    padding: 10px;
-    box-shadow: 0 2px 8px #ca633c;
-    border-radius: 8px;
-    width: 400px;
-    margin-top: 100px;
-  }
-  
-  .burger-6 .dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    top: 10.5rem;
+    left: 2rem;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease forwards;
+    backdrop-filter: blur(6px);
 }
 
-.burger-6 .dropdown-menu ul li {
-    margin: 8px 0;
-}
-
-.burger-6 .dropdown-menu ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 5px 10px;
+.burger-6 #ck-6:checked ~ .dropdown-menu {
     display: block;
-    font-family: monospace;
-    font-size: 15px;
-    transition: 1s;
-
-}
-
-.burger-6 .dropdown-menu ul li a:hover {
-    background-color: #f3bc7880;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-/* Mostrar o menu dropdown quando o checkbox estiver marcado */
-.burger-6 #ck-6:checked~.dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu {
-    display: none;
-    /* Oculto por padrão */
-    position: absolute;
-    top: 4.5rem;
-    /* Ajuste conforme necessário */
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Transparência leve */
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: auto;
-
 }
 
 .dropdown-menu ul {
     list-style: none;
-    /* Remove marcadores de lista */
     padding: 0;
     margin: 0;
 }
 
 .dropdown-menu ul li {
-    margin-bottom: 20px;
-    /* Espaçamento entre os itens */
+    margin-bottom: 0.5rem;
 }
 
-
-button.btn-links {
-  background-color: transparent; /* Remove fundo dos botões */
-  border: none; /* Remove borda */
-  font-size: 20px; /* Tamanho do texto ajustado */
-  color: rgb(43, 226, 67); /* Cor verde neon */
-  font-family: monospace;
-  cursor: pointer;
-  transition: 0.3s;
-  padding-inline: 18px;
-  margin-inline: 10px; /* Espaço entre os botões */
-  line-height: 30px;
-  width: fit-content;
-}
-
-
-
-button.btn-links:hover {
-    color: #32cd32; /* Cor levemente diferente no hover */
-    animation: bouncing 1s;
-    font-size: 20px;
-    
-}
-@keyframes bouncing {
-  0%, 50% { transform: translateY(0); }
-  40% { transform: translateY(-15px); }
-  60% { transform: translateY(-7px); }
-}
-.container{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.maculados {
-    background: linear-gradient(to right, #40d292 , rgb(196, 180, 36) 23%, black 53%, rgb(0, 117, 128) 73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.maculados:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.cranios {
-    background: linear-gradient(to right, #0dcb29 , rgb(231, 9, 219) 23%, blue 53%, yellow 73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.cranios:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.financeiramente {
-    background: linear-gradient(to right, #cb1d0d , rgb(9, 94, 231) 23%, rgb(86, 54, 6) 53%, rgb(220, 13, 220) 63%, yellow 83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.financeiramente:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.mavericks {
-    background: linear-gradient(to right, #8f0dcb, rgb(231, 9, 216) 23%, rgb(249, 215, 25) 53%, rgb(13, 113, 220) 73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.mavericks:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.gabiru {
-    background: linear-gradient(to right, #9400d9 , rgb(9, 76, 231) 23%, rgb(249, 18, 18) 53%, rgb(0, 0, 0) 73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.gabiru:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.livingtech {
-    background: linear-gradient(to right, #3a7dba 1%, rgb(67, 107, 200) 13%, rgb(37, 18, 249) 23%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-
-.livingtech:hover {
-    font-size: 30px;
-    transition: 1s;
-}
-
-.infinity {
-    background: linear-gradient(to right, #a97ecf 1%, rgb(119, 70, 161) 13%, rgb(109, 25, 148) 23%, purple 33%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
+/* Container para os cartões */
 .container-card {
-    width: 300px;
-    height: 300px;
-    margin-left: 40%;
-    margin-top: -90px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da tela */
 }
 
 .card {
-    width: 300px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    position: relative;
-}
-.card:hover a::before{
-    box-shadow: 0px 0px 20px white;
-}
-.card a {
-    width: 100%;
-    text-align: center;
+    width: 80vh;
+    height: 21.5vh;
     text-decoration: none;
-    font-size: 22px;
-    color: white;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    position: fixed; 
+    top: 15rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 2; 
+    border-radius: var(--border-radius);
+    transition: all 0.5s;
+    gap: 0.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 1px 4px black;
+    margin-left: 20px;
 }
 
-#Maculados {
-    background-image: url('https://preview.redd.it/does-anyone-think-the-erdtree-is-inspired-from-the-trees-of-v0-v3qslxqiavm91.jpg?width=640&crop=smart&auto=webp&s=b3b3c04d46862c1f9e67406f49ce332a9bf27b07');
-    background-size: cover;
-    background-repeat: no-repeat;
+.card:hover{
+    box-shadow: 10px 10px 22px black;
 }
 
+.card:before{
+    content: '';
+    background: linear-gradient(to right, #fd0f04,#fe7f5d,
+           #ffb78a, #ffefb6, #fd0f04, #fe7f5d,
+           #ffb78a, #ffefb6, #fd0f04);
+    position: absolute;
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(var(--glow-size));
+    width: calc(100% + var(--glow-size));
+    height: calc(100% + var(--glow-size));
+    opacity: 0;
+    border-radius: var(--border-radius);
+    animation: glow 25s alternate infinite;
+    transition: opacity .5s linear;
+}
 
-#Maculados a::after,
-#Maculados a::before {
+.card:active {
+    background: var(--btn-bg);
+  }
+  
+  .card:hover:before {
+    opacity: 2;
+  }
+  
+  .card:after {
+    z-index: -1;
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), black, red, gold, rgb(7, 101, 56), black);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
+    background: var(--btn-bg);
+    left: 0;
+    top: 0;
+    border-radius: var(--border-radius);
+  }
+  
+  @keyframes glow {
+    0% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 300% 0;
+    }
+  
+    100% {
+        background-position: 0 0;
+    }
+  }
 
-
-#Infinity {
-    background: brown;
-
-}
-
-#Infinity a::after,
-#Infinity a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), #ce96ff, rgb(109, 25, 148),rgb(66, 27, 101), rgb(216, 6, 216), #ce96ff);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
- 
-#Financeiramente {
-    background: bisque;
-
-}
-
-#Financeiramente a::after,
-#Financeiramente a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), #cb1d0d, rgb(9, 94, 231), rgb(86, 54, 6), rgb(220, 13, 220), yellow, #cb1d0d);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
-
-
-#Crânios {
-    background: antiquewhite;
-
-}
-
-#Crânios a::after,
-#Crânios a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), #0dcb29, rgb(231, 9, 219), blue, yellow, #0dcb29);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
-
-#Mavericks {
-    background: aqua;
-}
-
-#Mavericks a::after,
-#Mavericks a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), #8f0dcb, rgb(231, 9, 216), rgb(249, 215, 25), rgb(13, 113, 220), #8f0dcb);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
-
-#Gabiru {
-    background: darkblue;
-
-}
-
-#Gabiru a::after,
-#Gabiru a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), #9400d9, rgb(9, 76, 231), rgb(249, 18, 18), rgb(0, 0, 0), #9400d9);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
-
-#Livingtech {
-    background: blueviolet;
-}
-
-#Livingtech a::after,
-#Livingtech a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index: -1;
-    background: conic-gradient(from var(--angle), black, red, #066ed0, black);
-    padding: 3px;
-    animation: spin 5s linear infinite;
-}
-
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes spin {
+@keyframes fadeIn {
     from {
-        --angle: 0deg;
+        opacity: 0;
+        transform: translateY(-10px);
     }
-
     to {
-        --angle: 360deg;
+        opacity: 1;
+        transform: translateY(0);
     }
-}
-
-.infinity:hover {
-    font-size: 30px;
-    transition: 1s;
-
 }
