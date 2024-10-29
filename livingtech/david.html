@@ -1,16 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <img src="print_david.png" alt="">
-   <h1>David Massari</h1>
-<h2>Desenvolvedor de Software</h2>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>davidmassari</title>
+    <meta
+      name="description"
+      content="Página pessoal do desenvolvedor David Massari"
+    />
+    <meta
+      name="keywords"
+      content="David Massari programação, desenvolvimento de sistemas"
+    />
+    <link rel="shortcut icon" href="./assets/avatar.png" type="image/x-icon" />
+    <link rel="stylesheet" href="david.css" />
+    <link rel="stylesheet" href="tema.css" />
+    <link rel="stylesheet" href="flip.css" />
+  </head>
+  <body>
+    <div class="header">
+      <input type="checkbox" class="checkbox" id="checktema" />
+      <label for="checktema" class="rotulo">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <main class="principal">
+      <div class="flip-box">
+        <div class="quem-sou flip-box-inner">
+          <img
+            src="./assets/avatar.png"
+            alt="avatar David"
+            class="imagem-perfil flip-box-front"
+          />
+          <img
+            src="./assets/david.png"
+            alt="foto David"
+            class="imagem-perfil flip-box-back"
+          />
+        </div>
+      </div>
 
-<h3>Olá, meu nome é David Massari, tenho 34 anos e sou estudante de Desenvolvimento de Sistemas.
-Hobbies: Xadrez, Poker, Viagens</h3>
-</body>
+      <div class="principal-nome">
+        <h1 class="principal-titulo">David Massari</h1>
+        <p class="principal-profissao">
+          Desenvolvedor de sistemas
+        </p>
+      </div>
+      <div class="sociais">
+        <ul class="sociais-lista">
+          <li class="sociais-item linkedin">
+            <a
+              href="https://www.linkedin.com/in/davidmassari/"
+              class="sociais-item-link"
+              target="_blank"
+              ><img
+                class="sociais-item-img"
+                src="./assets/socials/linkedin.png"
+                alt="ícone linkedin"
+              />
+            </a>
+          </li>
+          <li class="sociais-item">
+            <a
+              href="https://www.instagram.com/davidmassari/"
+              class="sociais-item-link"
+              target="_blank"
+              ><img
+                class="sociais-item-img"
+                src="./assets/socials/ig.png"
+                alt="ícone instagram pessoal"
+              />
+            </a>
+          </li>
+          <li class="sociais-item">
+            <a
+              href="https://github.com/davidmassari"
+              class="sociais-item-link"
+              target="_blank"
+              ><img
+                class="sociais-item-img"
+                src="./assets/socials/github.png"
+                alt="ícone github"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section class="descricao">
+        <p class="descricao-texto">Primeiro, sente-se e pegue seu café ☕!</p>
+        
+        <p class="descricao-texto">
+          Se caiu por aqui, me chamo
+          <strong class="descricao-texto-destaque">David</strong>, sou um
+          amante de tecnologia, jogos, café e da minha esposa! Atualmente
+          estudo DEV no Senai, além de amar técnologia, também amo o mundo da literatura e estou finalizando meu primeiro livro, um romance chamado "Quando desisti de amar".
+        </p>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="forca-msg">
+        <i class="fa-solid fa-jedi fa-xl"></i>
+        <h2 class="force">Que a força esteja com você!</h2>
+      </div>
+      <div class="rodape-mapa">
+        <p class="rodape-titulo"><strong>Recomendações</strong></p>
+        <br />
+        <ul class="rodape-mapa-lista">
+          <li class="rodape-mapa-item">
+            <a
+              href="https://open.spotify.com/intl-pt/track/6z8ixQ0dP8xCXu45HeMTa4"
+              target="_blank"
+              >Spotify</a
+            >
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6da157026d.js"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
